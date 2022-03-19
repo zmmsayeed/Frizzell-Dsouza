@@ -1,7 +1,13 @@
 .navbar-brand {
-    padding: 5px 15px;
-    border: 2px solid var(--black);
+    /* padding: 5px 15px; */
+    /* border: 2px solid #EEEEEE; */
     font-weight: 800;
+    color: #EEEEEE !important;
+    font-size: 1.5rem;
+}
+
+.bg-dark {
+    background-color: var(--black) !important;
 }
 
 .nav-link {
@@ -19,5 +25,5 @@
 
 .navbar-nav .active>.nav-link {
     font-weight: bold !important;
-    border-bottom: 2px solid #87ccb8;
+    border-bottom: 2px solid #EEEEEE;
 }
