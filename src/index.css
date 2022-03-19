@@ -1,0 +1,18 @@
+html, body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif !important;
+}
+
+:root {
+  --black: #091023;
+  --pink: #fed5db;
+  --yellow: #ffdfc0;
+  --green: #c0eade;
+  --blue: #b5e3f3;
+  --purple: #d0d4f9;
+
+  --dark-light: #273F61;
+
+  --yellow-bg-color: #ebddd0;
+
+}

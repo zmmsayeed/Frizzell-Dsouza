@@ -1,0 +1,32 @@
+#about {
+    /* background-color: var(--yellow-bg-color); */
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.about-sub-heading {
+    color: var(--black);
+    font-size: 1.2rem;
+    color: var(--pink);
+    font-weight: bold;
+}
+
+.about-heading {
+    font-weight: bold;
+    color: #63dfbc;
+    font-size: 2.5em;
+}
+
+.period {
+    color: #6f42c1;
+}
+
+#about p {
+    font-size: 1.2em;
+}
+
+#about .btn-primary {
+    background-color: #6f42c1;
+    border-color: #6f42c1;
+    border-radius: 0;
+}

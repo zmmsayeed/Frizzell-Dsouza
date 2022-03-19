@@ -1,0 +1,27 @@
+#music {
+    background: linear-gradient(-45deg, #fed5db, #e5d8f3, #b0d8e7, #e7dda1);
+    background-size: 400% 400%;
+    animation: gradient 1s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.music-item {
+    background: rgba(0,0,0,0.1);
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.music-item:hover {
+    border-left: 3px solid black;
+}

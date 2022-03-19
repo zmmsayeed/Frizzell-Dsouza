@@ -1,0 +1,23 @@
+.navbar-brand {
+    padding: 5px 15px;
+    border: 2px solid var(--black);
+    font-weight: 800;
+}
+
+.nav-link {
+    padding: 0 20px !important;
+    font-weight: 500;
+}
+
+.nav-item:hover {
+    transition: all 2s ease-in-out;
+}
+
+.navbar-nav li > a:hover {
+    border-bottom: 2px solid #8ccfbc;
+}
+
+.navbar-nav .active>.nav-link {
+    font-weight: bold !important;
+    border-bottom: 2px solid #87ccb8;
+}
