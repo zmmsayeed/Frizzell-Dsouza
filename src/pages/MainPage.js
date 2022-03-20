@@ -12,8 +12,6 @@ function MainPage() {
             <Music />
             <About />
             <Contact />
-
-            <div style={{ height: '100vh' }} />
         </>
     )
 }

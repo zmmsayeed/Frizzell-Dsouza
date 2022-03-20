@@ -1,7 +1,17 @@
 #music {
+    padding: 10% 0;
     background: linear-gradient(-45deg, #fed5db, #e5d8f3, #b0d8e7, #e7dda1);
     background-size: 400% 400%;
     animation: gradient 1s ease infinite;
+}
+
+#music h1 {
+    color: var(--pink);
+    font-weight: bold;
+}
+
+.music-period {
+    color: #6f42c1;
 }
 
 @keyframes gradient {
@@ -24,4 +34,70 @@
 
 .music-item:hover {
     border-left: 3px solid black;
+}
+
+
+/* New Design */
+.card {
+    overflow: hidden;
+}
+
+.card-img-top {
+    filter: brightness(60%);
+    transition: all 0.5s ease;
+    
+}
+
+.card-img-top:hover {
+    filter: brightness(100%);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.music-info {
+    /* background-color: ; */
+    position: absolute;
+    bottom: 0;
+    padding: 1.5rem;
+    width: 100%;
+} 
+
+.playButton {
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.playButton:hover {
+    color: #ECA6A6;
+    cursor: pointer;
+}
+
+.music-title {
+    /* font-weight: bold; */
+    font-family: 'Lancelot', cursive;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.song-info {
+    color: white;
+}
+
+.drawer-div {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ant-drawer-close {
+    color: black !important;
+}
+
+.ant-drawer-title {
+    color: var(--pink) !important;
+    font-weight: bold !important;
+    font-size: 1.6rem !important;
+    font-family: 'Lancelot', cursive;
 }

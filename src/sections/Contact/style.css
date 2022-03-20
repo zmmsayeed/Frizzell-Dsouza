@@ -18,7 +18,7 @@
 /* #6f42c1 */
 
 .getintouch {
-    background-color: #6f42c1;
+    background-color: #D18CE0;
     font-size: 6rem;
     font-weight: bold;
     padding: 5%;
@@ -41,7 +41,7 @@
     border-radius: 50%;
     justify-content: center;
     align-items: center; 
-    background-color: lightblue;
+    background-color: var(--black);
     flex-direction: row;
     margin-right: 10px;
 }
@@ -59,4 +59,28 @@
     font-size: 100px;
     display: inline-block;
     position: relative;
+}
+
+.social-links a:hover {
+    color: #E2DEA9 !important;
+}
+
+.social-link-heading {
+    font-family: 'Lancelot', cursive;
+    font-weight: bold;
+    color: #63dfbc;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+.social-link-period {
+    color: #6f42c1;
+}
+
+.email-heading {
+    font-family: 'Lancelot', cursive;
+    letter-spacing: 0.8px;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: var(--pink);
 }

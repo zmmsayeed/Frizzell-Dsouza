@@ -13,6 +13,7 @@ function Contact() {
                 Get in touch.
               </div>
               <div class="col-md-6 col-lg-6 col-12 offset-md-1 offset-lg-1 touch-right">
+                <h3 className='mb-4 social-link-heading'>Social Links<span className='social-link-period'>.</span></h3>
                 <div class="social-links">
                   <a
                     href="https://www.instagram.com/frizzell.dsouza"
@@ -47,6 +48,10 @@ function Contact() {
                     <FaSoundcloud size={30} />
                   </a>
                 </div>
+
+                <hr className='mt-5' />
+
+                <h3 className='mb-4 mt-5 email-heading'>Email<span className='social-link-period'>.</span></h3>
               </div>
             </div>
           </div>
