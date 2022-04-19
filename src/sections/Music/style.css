@@ -1,6 +1,6 @@
 #music {
     padding: 10% 0;
-    background: linear-gradient(-45deg, #fed5db, #e5d8f3, #b0d8e7, #e7dda1);
+    /* background: linear-gradient(-45deg, #fed5db, #e5d8f3, #b0d8e7, #e7dda1); */
     background-size: 400% 400%;
     animation: gradient 1s ease infinite;
 }

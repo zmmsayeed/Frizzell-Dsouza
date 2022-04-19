@@ -1,12 +1,13 @@
 .navbar-brand {
-    /* padding: 5px 15px; */
-    /* border: 2px solid #EEEEEE; */
+    padding: 5px 15px;
+    border: 2px solid #EEEEEE;
     font-weight: 800;
     color: #EEEEEE !important;
     font-size: 1.5rem;
 }
 
 .bg-dark {
+    /* background-color: rgba(0, 0, 0, 0.7) !important; */
     background-color: var(--black) !important;
 }
 

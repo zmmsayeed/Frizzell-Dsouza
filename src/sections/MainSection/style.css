@@ -44,6 +44,7 @@
 }
 
 .main-section-content h1 {
+    font-family: 'Lancelot', cursive;
     color: #EEEEEE;
     letter-spacing: 1.5px;
     
@@ -147,11 +148,14 @@ a.social-box:hover {
 .subscribe-input {
     font-family: 'Lancelot', cursive;
     font-size: 1.5rem;
-    border-radius: 0;
     background-color: transparent;
-    border: 2px solid #D18CE0 !important;
+    /* border: 2px solid #D18CE0 !important; */
+    border: 2px solid #6E819A !important;
     border-right: 0 !important;
     color: black;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding-left: 20px;
 }
 
 .subscribe-input::placeholder {
@@ -160,11 +164,15 @@ a.social-box:hover {
 
 .subscribe-button {
     border-radius: 0;
-    background: #D18CE0;
+    background: #6E819A;
     border: 0;
-    border-left: 2px solid #D18CE0;
+    border-left: 2px solid #6E819A;
     font-weight: 500;
     letter-spacing: 0.5pt;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
