@@ -21,7 +21,7 @@ function Navbar() {
       <nav className={ colorChange ? "navbar navbar-expand-lg p-md-4 p-lg-4 p-0 navbar-dark bg-dark fixed-top" : "navbar navbar-expand-lg p-md-4 p-lg-4 p-0 navbar-dark bg-transparent fixed-top"  }>
          {/* className="navbar navbar-expand-lg p-md-4 p-lg-4 p-0 navbar-dark bg-dark fixed-top"> */}
         <div className='container'>
-          <a className="navbar-brand" href="#">{websiteLogoText}</a>
+          <a className="navbar-brand" href="#">Frizzell D<span className='montserrat'>'</span>Souza</a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -35,13 +35,19 @@ function Navbar() {
                 <a className="nav-link" href="#music">Music</a>
               </li>
               <li className="nav-item">
+                <a className="nav-link" href="#subscribe">Subscribe</a>
+              </li>
+              <li className="nav-item">
                 <a className="nav-link" href="#about">About</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">EPK</a>
+                <a className="nav-link" href="#watch">Watch</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Contact</a>
+                <a className="nav-link" href="#press">Press</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>

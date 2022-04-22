@@ -1,0 +1,16 @@
+#subscribe {
+    min-height: 100vh;
+    background-color: #0e1323;
+    padding: 8% 0;
+    color: #e8e29a;
+}
+
+#subscribe h3 {
+    color: #e8e29a;
+    font-family: 'the_seasonsbold';
+}
+
+#subscribe h5 {
+    color: #e8e29a;
+    font-family: 'the_seasonsbold';
+}

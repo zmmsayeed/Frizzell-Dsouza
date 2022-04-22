@@ -28,7 +28,7 @@ function Music() {
         {
             name: "New",
             sub: "Single",
-            image: "/images/music/New.jpeg",
+            image: "/images/music/New_vinyl.png",
             yt: "google.com",
             spotify: "google.com",
             apple: "google.com",
@@ -36,7 +36,7 @@ function Music() {
         {
             name: "Drown Away",
             sub: "Single",
-            image: "/images/music/2.jpeg",
+            image: "/images/music/Drown_vinyl.png",
             yt: "google.com",
             spotify: "google.com",
             apple: "google.com",
@@ -44,7 +44,15 @@ function Music() {
         {
             name: "Foolish Once Again",
             sub: "Single",
-            image: "/images/music/3.jpeg",
+            image: "/images/music/foolish_vinyl.png",
+            yt: "google.com",
+            spotify: "google.com",
+            apple: "google.com",
+        },
+        {
+            name: "Fall",
+            sub: "Single",
+            image: "/images/music/Fall_vinyl.png",
             yt: "google.com",
             spotify: "google.com",
             apple: "google.com",
@@ -69,12 +77,12 @@ function Music() {
             </Drawer>
 
             <div className='container py-5'>
-                <h1 className='mb-5'>Music<span className='music-period'>.</span></h1>
+                <h1 className='mb-5'>Music</h1>
 
-                <div className='row'>
+                {/* <div className='row'>
                     {
                         musicArr.map((music, index) => (
-                            <div className='col-md-4' key={index}>
+                            <div className='col-md-3' key={index}>
                                 <div class="card" onClick={() => showDrawer(music)}>
                                     <img class="card-img-top" src={music.image} alt="Card image cap" />
                                     <div className='music-info'>
@@ -88,6 +96,20 @@ function Music() {
                                             </div>   
                                         </div> 
                                     </div>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div> */}
+
+                <div className='row'>
+                    {
+                        musicArr.map((music, index) => (
+                            <div className='col-md-3' key={index}>
+                                <div class="card" onClick={() => showDrawer(music)}>
+                                    <img class="card-img-top" src={music.image} alt="Card cap" />
+                                    <p className='mb-0 mt-2 music-title'>{music.name} |</p>
+                                    <p className='music-title'>{music.sub}</p>
                                 </div>
                             </div>
                         ))

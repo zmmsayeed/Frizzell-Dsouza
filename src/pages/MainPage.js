@@ -3,6 +3,7 @@ import About from '../sections/About';
 import Contact from '../sections/Contact';
 import MainSection from '../sections/MainSection';
 import Music from '../sections/Music';
+import Subscribe from '../sections/Subscribe';
 
 function MainPage() {
     return (
@@ -10,6 +11,7 @@ function MainPage() {
             <Navbar />
             <MainSection />
             <Music />
+            <Subscribe />
             <About />
             <Contact />
         </>
