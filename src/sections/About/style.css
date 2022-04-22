@@ -1,4 +1,5 @@
 #about {
+    min-height: 100vh;
     /* background-color: var(--yellow-bg-color); */
     padding-top: 5%;
     padding-bottom: 5%;

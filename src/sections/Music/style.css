@@ -47,12 +47,40 @@
     
 }
 
-.card-img-top:hover {
+/* .card-img-top:hover {
     filter: brightness(50%);
     cursor: pointer;
-}
+} */
 
 
 .music-title {
     color: #69443c !important;
 }
+
+  
+.dropdown-content {
+    color: white;
+    margin-top: -50px;
+    display: none;
+    position: relative;
+    background-color: #0e1323;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 99;
+    width: 120px !important;
+    padding: 10px 15px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: all 1s ease !important;
+}
+
+.dropdown-content p {
+    font-size: 0.7rem;
+}
+  
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown:hover .dropdown-content {display: block;}

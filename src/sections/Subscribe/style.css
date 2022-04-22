@@ -3,6 +3,8 @@
     background-color: #0e1323;
     padding: 8% 0;
     color: #e8e29a;
+    display: flex;
+    align-items: center;
 }
 
 #subscribe h3 {
@@ -11,6 +13,29 @@
 }
 
 #subscribe h5 {
+    font-size: 1.1rem;
     color: #e8e29a;
     font-family: 'the_seasonsbold';
+}
+
+
+#subscribe input,
+#subscribe select {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #808275;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+#subscribe input::placeholder,
+#subscribe select::placeholder {
+    font-size: 0.8rem;
+    color: #e8e29a;
+}
+
+#subscribe option {
+    font-size: 1rem;
+    background-color: #0e1323 !important;
 }
