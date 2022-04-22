@@ -2,19 +2,19 @@ import { FaInstagram, FaYoutube, FaTwitter, FaSoundcloud } from 'react-icons/fa'
 import "../../index.css";
 import "./style.css";
 
-function Contact() {
+function Contact({refSection}) {
   return (
-    <div>
+    <div ref={refSection}>
       <div id="contact">
         <div className="container">
-          <div class="container">
-            <div class="row ">
-              <div class="col-md-5 col-lg-5 col-12 getintouch">
+          <div className="container">
+            <div className="row ">
+              <div className="col-md-5 col-lg-5 col-12 getintouch">
                 Get in touch.
               </div>
-              <div class="col-md-6 col-lg-6 col-12 offset-md-1 offset-lg-1 touch-right">
+              <div className="col-md-6 col-lg-6 col-12 offset-md-1 offset-lg-1 touch-right">
                 <h3 className='mb-4 social-link-heading'>Social Links<span className='social-link-period'>.</span></h3>
-                <div class="social-links">
+                <div className="social-links">
                   <a
                     href="https://www.instagram.com/frizzell.dsouza"
                     target="_blank"

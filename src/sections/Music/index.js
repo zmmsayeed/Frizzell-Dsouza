@@ -7,7 +7,7 @@ import { FaPlayCircle, FaApple, FaYoutube, FaSpotify } from "react-icons/fa";
 // importing stylesheet
 import "./style.css";
 
-function Music() {
+function Music({refSection}) {
   const [visible, setVisible] = useState(false);
   const [song, setSong] = useState("");
   const [selectedSong, setSelectedSong] = useState({});
@@ -63,7 +63,7 @@ function Music() {
   ];
 
   return (
-    <div id="music">
+    <div id="music" ref={refSection}>
       <Drawer
         title={song}
         placement="bottom"
@@ -90,18 +90,18 @@ function Music() {
         <div className="row">
           {musicArr.map((music, index) => (
             <div className="col-md-3" key={index}>
-              <div class="card" onClick={() => showDrawer(music)}>
-                <div class="dropdown">
-                  <div class="dropbtn">
+              <div className="card" onClick={() => showDrawer(music)}>
+                <div className="dropdown">
+                  <div className="dropbtn">
                     <img
-                      class="card-img-top"
+                      className="card-img-top"
                       src={music.image}
                       alt="Card cap"
                     />
                     <p className="mb-0 mt-2 music-title">{music.name} |</p>
                     <p className="mb-0 music-title">{music.sub}</p>
                   </div>
-                  <div class="dropdown-content">
+                  <div className="dropdown-content">
                     {music.exclusive ? (
                       <>
                         <p>Available exclusively on</p>

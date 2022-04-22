@@ -2,14 +2,14 @@ import { useRef, useEffect } from 'react';
 import { FaInstagram, FaYoutube, FaTwitter, FaSpotify } from 'react-icons/fa';
 import './style.css';
 
-function MainSection() {
+function MainSection({refSection}) {
     const vidRef=useRef();
 
     useEffect(() => { vidRef.current.play(); },[]);
 
     return (
-        <div id="main-section">
-            <video autoplay muted loop id="myVideo" ref={ vidRef }>
+        <div id="main-section" ref={refSection}>
+            <video autoPlay muted loop id="myVideo" ref={ vidRef }>
                 <source src="/videos/FOA1.mp4" type="video/mp4" />
             </video>
 

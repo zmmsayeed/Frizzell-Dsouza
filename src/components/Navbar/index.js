@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { websiteLogoText } from '../../constants';
 import './style.css';
 
-function Navbar() {
+function Navbar({activeSection}) {
   const [colorChange, setColorChange] = useState(false);
 
   const changeNavbarColor = () =>{
@@ -15,6 +15,8 @@ function Navbar() {
   };
 
   window.addEventListener('scroll', changeNavbarColor);
+
+  // console.log(activeSection)
 
   return (
     <>

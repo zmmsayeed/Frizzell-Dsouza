@@ -1,9 +1,9 @@
 import '../../index.css';
 import "./style.css";
 
-function About() {
+function About({refSection}) {
   return (
-    <div>
+    <div ref={refSection}>
       <div id="about">
         <div className="container mt-5">
           <div className="row mt-5">
