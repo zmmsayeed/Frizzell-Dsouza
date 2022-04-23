@@ -130,15 +130,20 @@ a.social-box {
 }
 
 a.social-box:hover {
-    color: #D18CE0;
+    color: #E2DEA9;
 }
 
 .btn-main-page {
     background-color: #0e1323 !important;
     border: 1px solid #0e1323 !important;
-    padding: 4px 40px 4px 30px !important;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
+    padding: 5px 40px !important;
+    border-radius: 40px;
+}
+
+.btn-main-page:hover {
+    background-color: white !important;
+    border: 1px solid white !important;
+    color: #0e1323 !important;
 }
 
 

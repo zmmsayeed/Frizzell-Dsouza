@@ -1,21 +1,22 @@
 #about {
     min-height: 100vh;
-    /* background-color: var(--yellow-bg-color); */
+    background-color: #30334b;
     padding-top: 5%;
     padding-bottom: 5%;
 }
 
 .about-sub-heading {
-    font-size: 1.6rem;
+    /* font-size: 1.6rem; */
     color: var(--pink);
     /* font-weight: bold; */
-    font-family: 'Lancelot', cursive;
+    /* font-family: 'Lancelot', cursive; */
 }
 
 .about-heading {
-    font-weight: bold;
-    color: #63dfbc;
-    font-size: 2.5em;
+    font-family: 'the_seasonsregular';
+    color: #dbc4bc;
+    border-left: 1px solid #dbc4bc;
+    padding-left: 10px;
 }
 
 .period {
@@ -23,12 +24,27 @@
 }
 
 #about p {
-    font-size: 1.6em;
-    font-family: 'Lancelot', cursive;
+    color: #dbd5ce;
+    font-size: 1.4em;
+    font-family: 'the_seasonsregular';
+    letter-spacing: 1.5px;
 }
 
 #about .btn-primary {
-    background-color: #6f42c1;
-    border-color: #6f42c1;
-    border-radius: 0;
+    font-family: 'the_seasonsregular';
+    background-color: #808275;
+    border-color: #808275;
+    border-radius: 40px;
+    padding: 10px 20px;
+    letter-spacing: 1.2px;
+}
+
+#about .btn-primary:hover {
+    background-color: white;
+    border-color: white;
+    color: #30334b !important;
+}
+
+.about-img {
+    border-radius: 50px !important;
 }
