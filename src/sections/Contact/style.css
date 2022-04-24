@@ -1,86 +1,27 @@
 #contact {
+    min-height: 100vh;
     background: #f9f9f9;
+    /* padding: 5% 0; */
+}
+
+.contact-content {
+    min-height: 50vh;
     padding: 5% 0;
-}
-
-.reach {
-    font-weight: bold;
-    font-size: 2.5rem;
-    color: var(--dark-light);
-}
-
-.contact-frizzell {
-    font-weight: bold;
-    font-size: 3.5em;
-    color: var(--pink);
-}
-
-/* #6f42c1 */
-
-.getintouch {
-    background-color: #D18CE0;
-    font-size: 6rem;
-    font-weight: bold;
-    padding: 5%;
-    color: white;
-}
-
-/* .touch-right {
-    background-color: gray;
-} */
-
-.social-links {
     display: flex;
-    flex-direction: row;
-}
-
-.social-links a {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    border-radius: 50%;
+    align-items: center;
     justify-content: center;
-    align-items: center; 
-    background-color: var(--black);
     flex-direction: row;
-    margin-right: 10px;
-}
-/* .social-links a{
-    display: block;
-    float: left;
-    width:50px;
-    height: 50px;
-    border: 2px solid #909090;
-    margin-right: 7px;
-    text-align:center;
-}  */
-
-.social-links a i{
-    font-size: 100px;
-    display: inline-block;
-    position: relative;
 }
 
-.social-links a:hover {
-    color: #E2DEA9 !important;
-}
-
-.social-link-heading {
-    font-family: 'Lancelot', cursive;
+.contact-getintouch {
+    font-family: 'the_seasonslight';
     font-weight: bold;
-    color: #63dfbc;
-    font-size: 2.5em;
-    letter-spacing: 1px;
+    font-size: 8rem;
 }
 
-.social-link-period {
-    color: #6f42c1;
-}
-
-.email-heading {
-    font-family: 'Lancelot', cursive;
-    letter-spacing: 0.8px;
+#contact p {
+    font-family: 'the_seasonslight';
     font-weight: bold;
-    font-size: 2.5em;
-    color: var(--pink);
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
 }

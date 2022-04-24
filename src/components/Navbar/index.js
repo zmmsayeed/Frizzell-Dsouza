@@ -23,6 +23,8 @@ function Navbar({activeSection}) {
         colorChange ? 
           activeSection === 'about'
           ? "navbar navbar-expand-lg p-md-4 p-lg-4 p-0 navbar-dark bg-dark bg-contact fixed-top"
+          : activeSection === 'contact'
+          ? "navbar navbar-expand-lg p-md-4 p-lg-4 p-0 navbar-dark bg-dark bg-translucent fixed-top"
           : "navbar navbar-expand-lg p-md-4 p-lg-4 p-0 navbar-dark bg-dark fixed-top"
         :"navbar navbar-expand-lg p-md-4 p-lg-4 p-0 navbar-dark bg-transparent fixed-top" }>
         <div className='container'>

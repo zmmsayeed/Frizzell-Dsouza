@@ -55,3 +55,7 @@
     color: #dbc4bc !important;
     background-color: #0e1323 !important;
 }
+
+.bg-translucent {
+    background-color: rgba(14, 19, 35, 0.5) !important;
+}

@@ -3,7 +3,6 @@ import {
   FaInstagram,
   FaYoutube,
   FaTwitter,
-  FaSpotify,
   FaFacebookSquare,
 } from "react-icons/fa";
 import {BsMusicNoteBeamed} from 'react-icons/bs'
