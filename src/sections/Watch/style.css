@@ -1,0 +1,21 @@
+#watch {
+    min-height: 100vh;
+    padding-top: 6%;
+}
+
+#watch h2 {
+    color: #69443c;
+    font-family: 'the_seasonsregular';
+    border-left: 1px solid #69443c;
+    padding-left: 10px;
+}
+
+.watch-blue {
+    background-color: #30334b;
+    padding: 2% 0;
+}
+
+.watch-blue h2 {
+    color: #dbc4bc !important;
+    border-left: 1px solid #dbc4bc !important;
+}
