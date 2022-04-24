@@ -7,6 +7,8 @@ import Subscribe from '../sections/Subscribe';
 
 import { useInView } from "react-intersection-observer";
 import Watch from '../sections/Watch';
+import Gallery from '../sections/Gallery';
+import Footer from '../components/Footer';
 
 function MainPage() {
     const [mainSectionRef, MainSectionInView] = useInView({ threshold: 0.5 });
@@ -15,6 +17,7 @@ function MainPage() {
     const [aboutRef, aboutInView] = useInView({ threshold: 0.5 });
     const [watchRef, watchInView] = useInView({ threshold: 0.5 });
     const [contactRef, contactInView] = useInView({ threshold: 0.5 });
+    const [galleryRef, galleryInView] = useInView({ threshold: 0.5 });
 
     let activeSection = "";
 
@@ -30,6 +33,8 @@ function MainPage() {
         activeSection = "contact";
     else if (watchInView)
         activeSection = "watch";
+    else if (galleryInView)
+        activeSection = "gallery";
 
     return (
         <>
@@ -39,7 +44,9 @@ function MainPage() {
             <Subscribe refSection={subscribeRef} />
             <About refSection={aboutRef} />
             <Watch refSection={watchRef} />
+            <Gallery refSection={galleryRef} />
             <Contact refSection={contactRef} />
+            <Footer />
         </>
     );
 }

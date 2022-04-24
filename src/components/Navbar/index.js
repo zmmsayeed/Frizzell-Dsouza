@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { websiteLogoText } from '../../constants';
 import './style.css';
 
 function Navbar({activeSection}) {
@@ -34,25 +33,28 @@ function Navbar({activeSection}) {
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
-              <li className={activeSection == "mainSection" ? "nav-item active" : "nav-item"}>
+              <li className={activeSection === "mainSection" ? "nav-item active" : "nav-item"}>
                 <a className="nav-link" href="#">Home</a>
               </li>
-              <li className={activeSection == "music" ? "nav-item active" : "nav-item"}>
+              <li className={activeSection === "music" ? "nav-item active" : "nav-item"}>
                 <a className="nav-link" href="#music">Music</a>
               </li>
-              <li className={activeSection == "subscribe" ? "nav-item active" : "nav-item"}>
+              <li className={activeSection === "subscribe" ? "nav-item active" : "nav-item"}>
                 <a className="nav-link" href="#subscribe">Subscribe</a>
               </li>
-              <li className={activeSection == "about" ? "nav-item active" : "nav-item"}>
+              <li className={activeSection === "about" ? "nav-item active" : "nav-item"}>
                 <a className="nav-link" href="#about">About</a>
               </li>
-              <li className={activeSection == "watch" ? "nav-item active" : "nav-item"}>
+              <li className={activeSection === "watch" ? "nav-item active" : "nav-item"}>
                 <a className="nav-link" href="#watch">Watch</a>
               </li>
-              <li className={activeSection == "press" ? "nav-item active" : "nav-item"}>
+              <li className={activeSection === "gallery" ? "nav-item active" : "nav-item"}>
+                <a className="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li className={activeSection === "press" ? "nav-item active" : "nav-item"}>
                 <a className="nav-link" href="#press">Press</a>
               </li>
-              <li className={activeSection == "contact" ? "nav-item active" : "nav-item"}>
+              <li className={activeSection === "contact" ? "nav-item active" : "nav-item"}>
                 <a className="nav-link" href="#contact">Contact</a>
               </li>
             </ul>

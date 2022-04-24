@@ -95,7 +95,7 @@ function Watch({refSection}) {
   </div>
   
   <div class="controls-top">
-    <a class="btn-floating" href="#multi-item-example" data-slide="prev">Right</a>
+    <a class="btn-floating ml-5" href="#multi-item-example" data-slide="prev">Right</a>
     <a class="btn-floating" href="#multi-item-example" data-slide="next">Left</a>
   </div>
 
