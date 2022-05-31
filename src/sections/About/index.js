@@ -7,11 +7,11 @@ function About({refSection}) {
       <div id="about">
         <div className="container mt-5">
           <div className="row mt-5">
-            <div className="col-12 col-md-6 col-lg-6">
+            <div className="col-12 col-md-6 col-lg-6 pr-md-5 pr-lg-5">
               <h1 className="about-heading mb-5">About</h1>
 
               <p className="mt-5">
-                <b className="about-sub-heading">Frizzell D’souza</b> is a singer<span className='montserrat'>-</span>songwriter based out of
+                Frizzell D’Souza is a singer<span className='montserrat'>-</span>songwriter based out of
                 Bangalore, who first showcased her talent by uploading song
                 covers on her Youtube channel back in 2018.
               </p>

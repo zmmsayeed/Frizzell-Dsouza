@@ -62,6 +62,10 @@ function Footer() {
                 <BsMusicNoteBeamed size={20} />
               </a>
             </p>
+            <p>
+              <a href="#">Terms & Conditions</a> | 
+              Privacy Policy
+            </p>
           </div>
 
             <div className="col-md-4 col-12 col-lg-4">
@@ -86,13 +90,13 @@ function Footer() {
                 <div className="row">
                     <div className="col-12 col-md-6 col-lg-6">
                     <a href="#" className="footer-link">The Hindu</a>
-                    <a href="#" className="footer-link">TOI</a>
+                    <a href="#" className="footer-link">Times of India</a>
                     <a href="#" className="footer-link">Browngirl</a>
                     <a href="#" className="footer-link">Rolling Stone</a>
                     </div>
                     <div className="col-12 col-md-6 col-lg-6">
                     <a href="#" className="footer-link">Springtide</a>
-                    <a href="#" className="footer-link">Platform</a> 
+                    <a href="#" className="footer-link">Platform Magazine</a> 
                     <a href="#" className="footer-link">Homegrown</a>
                     <a href="#" className="footer-link">Radio City</a>
                     </div>

@@ -36,7 +36,7 @@ function Watch({refSection}) {
 
         <div className="watch-blue mt-4">
             <div className="container">
-                <h2 className="mb-5">Music Videos</h2>
+                <h2 className="mb-5">Frizzell<span className="montserrat">'</span>s covers</h2>
             </div>
 
             <div class="container my-4">

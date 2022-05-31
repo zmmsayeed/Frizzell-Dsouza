@@ -36,7 +36,7 @@ function Contact({ refSection }) {
               </p>
               <p>
                 <FaPhoneSquareAlt className='mr-2'/>
-                <span className="montserrat">+</span>91  12325 67890
+                <span className="montserrat">+</span>91 99459 93522
               </p>
             </div>
           </div>

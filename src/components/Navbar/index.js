@@ -27,8 +27,16 @@ function Navbar({activeSection}) {
           ? "navbar navbar-expand-lg p-md-4 p-lg-4 p-0 navbar-dark bg-dark bg-translucent fixed-top"
           : "navbar navbar-expand-lg p-md-4 p-lg-4 p-0 navbar-dark bg-dark fixed-top"
         :"navbar navbar-expand-lg p-md-4 p-lg-4 p-0 navbar-dark bg-transparent fixed-top" }>
-        <div className='container'>
-          <a className="navbar-brand" href="#">Frizzell D<span className='montserrat'>'</span>Souza</a>
+        <div className='container-fluid'>
+          {/* <a className="navbar-brand" href="#">Frizzell D<span className='montserrat'>'</span>Souza</a> */}
+          <a className="navbar-brand" href="#">
+            {
+              activeSection === 'about'
+              ?<img src="/images/logo_dark.png" alt="Frizzell D'Souza" width="250px" />
+              :<img src="/images/logo_light_1.png" alt="Frizzell D'Souza" width="250px" />
+            }
+            
+          </a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>

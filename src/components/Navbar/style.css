@@ -6,9 +6,9 @@
 .navbar-brand {
     font-weight: 800;
     color: #eae6e1 !important;
-    font-size: 1.5rem;
-    font-family: 'the_seasonslight';
-    letter-spacing: 1.7px;
+    font-size: 2rem;
+    font-family: 'the_seasonslight' !important;
+    letter-spacing: 1px;
 }
 
 .bg-contact .navbar-brand {
@@ -48,7 +48,7 @@
 .navbar-nav .active>.nav-link {
     color: #30334b !important;
     /* font-weight: bold !important; */
-    background-color: #dbc4bc !important;
+    background-color: #eae6e1 !important;
 }
 
 .bg-contact .navbar-nav .active>.nav-link {

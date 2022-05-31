@@ -14,9 +14,10 @@
 }
 
 .contact-getintouch {
-    font-family: 'the_seasonslight';
-    font-weight: bold;
+    font-family: 'the_seasonsregular';
+    /* font-weight: bold; */
     font-size: 8rem;
+    color: #30334b !important;
 }
 
 #contact p {
