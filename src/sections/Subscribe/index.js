@@ -142,6 +142,10 @@ class Subscribe extends React.Component {
           </div>
 
           <div className="col-4"></div>
+
+          <div className="col-4 offset-md-4 offset-lg-4 mt-5">
+            <button className="btn btn-primary btn-block">Subscribe</button>
+          </div>
         </div>
       </div>
     );
