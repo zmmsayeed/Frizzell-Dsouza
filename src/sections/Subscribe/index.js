@@ -52,6 +52,7 @@ class Subscribe extends React.Component {
 
     return (
       <div id="subscribe" className="subscribe" ref={this.props.refSection}>
+        <div className="container-fluid">
         <div className="row">
           <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4">
             <h3>
@@ -146,6 +147,7 @@ class Subscribe extends React.Component {
           <div className="col-4 offset-md-4 offset-lg-4 mt-5">
             <button className="btn btn-primary btn-block">Subscribe</button>
           </div>
+        </div>
         </div>
       </div>
     );

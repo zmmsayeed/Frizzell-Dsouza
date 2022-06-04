@@ -38,11 +38,11 @@ function MainSection({refSection}) {
                                 </a>
                             </div>
 
-                            <div className='subscribe-form mt-5'>
+                            <div className='subscribe-form mt-lg-5 mt-md-5  mt-3'>
                                 
                                 <button className='btn btn-primary btn-main-page mt-5'>Fund</button>
                                 <a href='#subscribe'>
-                                    <button className='btn btn-primary btn-main-page ml-5 mt-5'>Subscribe</button>
+                                    <button className='btn btn-primary btn-main-page ml-md-4 ml-lg-4 ml-1 mt-5'>Subscribe</button>
                                 </a>
                             </div>
                         </div>

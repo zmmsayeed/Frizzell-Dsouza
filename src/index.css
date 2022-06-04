@@ -1,11 +1,13 @@
 html, body {
   margin: 0;
   font-family: 'Montserrat', sans-serif !important;
+  max-width: 100% !important;
 }
 
 body {
   overflow-x: hidden !important;
   overflow-y: scroll !important;
+  max-width: 100% !important;
 }
 
 .montserrat {
