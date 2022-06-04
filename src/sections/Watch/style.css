@@ -19,3 +19,27 @@
     color: #dbc4bc !important;
     border-left: 1px solid #dbc4bc !important;
 }
+
+.controls-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.controls-top a {
+    color: white !important;
+}
+
+.multi-item-example {
+    margin-left: 50px !important;
+  margin-right: 50px !important;
+}
+
+.carousel-control-prev {
+    margin-left: -100px;
+}
+
+.carousel-control-next {
+    margin-right: -100px;
+}

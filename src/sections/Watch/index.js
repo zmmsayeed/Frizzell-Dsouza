@@ -18,15 +18,15 @@ function Watch({refSection}) {
                             <p>Drown Away</p>
                         </div>
                         <div className="col-12 col-md-6 col-lg-6">
-                            <iframe width="100%" height="150" src="https://www.youtube.com/embed/ew8g3piv5M4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <img src="/images/music/fall.jpg" alt="Fall" width="100%" height="150" />
                             <p>Fall</p>
                         </div>
                         <div className="col-12 col-md-6 col-lg-6">
                             <iframe width="100%" height="150" src="https://www.youtube.com/embed/i7bWmnJaSE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <p>Fall</p>
+                            <p>New</p>
                         </div>
                         <div className="col-12 col-md-6 col-lg-6">
-                            <iframe width="100%" height="150" src="https://www.youtube.com/embed/i7bWmnJaSE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <img src="/images/music/comingsoon.jpg" alt="Fall" width="100%" height="150" />
                             <p>Coming Soon</p>
                         </div>
                     </div>
@@ -94,10 +94,17 @@ function Watch({refSection}) {
 
   </div>
   
-  <div class="controls-top">
-    <a class="btn-floating ml-5" href="#multi-item-example" data-slide="prev">Right</a>
-    <a class="btn-floating" href="#multi-item-example" data-slide="next">Left</a>
-  </div>
+  {/* <div class="controls-top">
+    <a class="btn-floating" href="#multi-item-example" data-slide="prev">Previous</a>
+    <a class="btn-floating" href="#multi-item-example" data-slide="next">Next</a>
+  </div> */}
+
+  <a class="carousel-control-prev" href="#multi-item-example" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#multi-item-example" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
 
 </div>
 
