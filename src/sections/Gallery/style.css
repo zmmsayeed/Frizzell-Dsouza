@@ -1,3 +1,23 @@
 #gallery {
     min-height: 100vh;
+    padding: 7% 0;
+}
+
+#gallery h2 {
+    color: #69443C;
+    font-family: 'the_seasonsregular';
+    border-left: 1px solid #69443c;
+    padding-left: 10px;
+}
+
+.img-holder {
+    overflow: hidden;
+}
+
+#gallery img {
+    transition: all 0.2s;
+}
+
+#gallery img:hover {
+    transform: scale(1.1);
 }
