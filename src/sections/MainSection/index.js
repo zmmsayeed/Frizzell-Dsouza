@@ -40,7 +40,9 @@ function MainSection({refSection}) {
 
                             <div className='subscribe-form mt-lg-5 mt-md-5  mt-3'>
                                 
-                                <button className='btn btn-primary btn-main-page mt-5'>Fund</button>
+                                <a href="https://originaldog.in/profile/view/ETPzFKnvzHMHkEDSnTt9ynTUio63" target="_blank" rel="noreferrer">
+                                    <button className='btn btn-primary btn-main-page mt-5'>Fund</button>
+                                </a>
                                 <a href='#subscribe'>
                                     <button className='btn btn-primary btn-main-page ml-md-4 ml-lg-4 ml-1 mt-5'>Subscribe</button>
                                 </a>
