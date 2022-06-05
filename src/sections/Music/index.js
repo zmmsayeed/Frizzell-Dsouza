@@ -1,27 +1,7 @@
-import { useState } from "react";
-import { Drawer } from "antd";
-
-// importing icons
-import { FaPlayCircle, FaApple, FaYoutube, FaSpotify } from "react-icons/fa";
-
 // importing stylesheet
 import "./style.css";
 
 function Music({refSection}) {
-  const [visible, setVisible] = useState(false);
-  const [song, setSong] = useState("");
-  const [selectedSong, setSelectedSong] = useState({});
-
-  const showDrawer = (music) => {
-    setVisible(true);
-    let str = music.name + " (" + music.sub + ")";
-    setSong(str);
-    setSelectedSong(music);
-  };
-
-  const onClose = () => {
-    setVisible(false);
-  };
 
   const musicArr = [
     {
@@ -97,35 +77,35 @@ function Music({refSection}) {
                       <>
                         <p className="mb-2">Listen on</p>
                         <a href="#" className="mb-2">
-                          <img
-                            src="/images/spotify.png"
-                            alt="spotify"
-                            width="20px"
-                          />
+                          <img src="/images/spotify.png" alt="spotify" width="20px" />
                         </a>
                         <a href="##" className="mb-2">
-                          <img
-                            src="/images/apple.png"
-                            alt="spotify"
-                            width="20px"
-                          />
+                          <img src="/images/apple.png" alt="spotify" width="20px" />
                         </a>
                         <a href="###" className="mb-2">
-                          <img
-                            src="/images/amazon.png"
-                            alt="spotify"
-                            width="40px"
-                          />
+                          <img src="/images/amazon.png" alt="spotify" width="40px" />
                         </a>
                         <a href="####" className="mb-2">
-                          <img
-                            src="/images/youtube.png"
-                            alt="spotify"
-                            width="25px"
-                          />
+                          <img src="/images/youtube.png" alt="spotify" width="25px" />
                         </a>
                       </>
                     )}
+                  </div>
+
+                  {/* For Mobile design */}
+                  <div className="mobile-listen mb-5">
+                    <a href="#">
+                      <img src="/images/spotify.png" alt="spotify" width="50px" />
+                    </a>
+                    <a href="##" className="ml-2">
+                      <img src="/images/apple.png" alt="spotify" width="50px" />
+                    </a>
+                    <a href="###" className="ml-2">
+                      <img src="/images/amazon.png" alt="spotify" width="75px" className="mt-3" />
+                    </a>
+                    <a href="####" className="ml-2">
+                      <img src="/images/youtube.png" alt="spotify" width="45px" />
+                    </a>
                   </div>
                 </div>
               </div>

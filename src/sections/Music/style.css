@@ -84,3 +84,20 @@
 }
   
 .dropdown:hover .dropdown-content {display: block;}
+
+.mobile-listen{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .mobile-listen{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .dropdown-content {
+        display: none;
+    }
+
+    .dropdown:hover .dropdown-content {display: none;}
+}
