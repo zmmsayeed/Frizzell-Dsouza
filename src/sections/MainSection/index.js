@@ -10,7 +10,7 @@ function MainSection({refSection}) {
     return (
         <div id="main-section" ref={refSection}>
             <video autoPlay muted loop id="myVideo" ref={ vidRef }>
-                <source src="/videos/FOA1.mp4" type="video/mp4" />
+                <source src="/videos/FOA6.mp4" type="video/mp4" />
             </video>
 
             <div className='content'>
