@@ -16,14 +16,14 @@ function Gallery({refSection}) {
                     <div className='col-md-4 mb-3 img-holder'>
                         <img src='/images/Gallery/3.jpg' className='img-fluid' />
                     </div>
-                    <div className='col-md-4 mb-3 img-holder'>
+                    <div className='col-md-3 mb-3 img-holder'>
                         <img src='/images/Gallery/4.jpg' className='img-fluid' />
                     </div>
-                    <div className='col-md-5 mb-3 img-holder'>
-                        <img src='/images/Gallery/6.jpg' className='img-fluid' />
+                    <div className='col-md-6 mb-3 img-holder'>
+                        <img src='/images/Gallery/6_1.jpg' className='img-fluid' />
                     </div>
                     <div className='col-md-3 mb-3 img-holder'>
-                        <img src='/images/Gallery/5.jpg' className='img-fluid' />
+                        <img src='/images/Gallery/5_1.jpg' className='img-fluid' />
                     </div>
                 </div>
             </div>

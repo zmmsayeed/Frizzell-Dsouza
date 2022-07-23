@@ -30,7 +30,7 @@ function About({refSection}) {
               </p>
 
 
-              <a href='/Artist Profile.pdf' target='_blank'>
+              <a href='/ArtistProfile_New.pdf' target='_blank'>
                 <button className='btn btn-primary mt-3'>Download EPK</button>
               </a>
             </div>
