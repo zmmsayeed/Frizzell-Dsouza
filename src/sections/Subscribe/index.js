@@ -21,7 +21,7 @@ class Subscribe extends React.Component {
       bdayDay: '',
       bdayYear: '',
       error: '',
-      loadingSub: true
+      loadingSub: false
     };
   }
 
