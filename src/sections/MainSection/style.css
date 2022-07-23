@@ -115,9 +115,11 @@ ul.dynamic-txt {
 
 h4.tagline {
     color: #E2DEA9;
-    font-family: 'Montserrat', sans-serif !important;
+    /* font-family: 'Montserrat', sans-serif !important; */
+    font-family: 'the_seasonslight';
     font-size: 1.2rem;
     font-weight: 400;
+    letter-spacing: 1px;
 }
 
 a.social-box {
@@ -145,5 +147,10 @@ a.social-box:hover {
     border: 1px solid white !important;
     color: #0e1323 !important;
 }
+
+/* .subscribe-button {
+    font-family: 'the_seasonslight' !important;
+    letter-spacing: 1px;
+} */
 
 

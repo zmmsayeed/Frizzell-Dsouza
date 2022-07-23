@@ -6,8 +6,8 @@
 #gallery h2 {
     color: #69443C;
     font-family: 'the_seasonsregular';
-    border-left: 1px solid #69443c;
-    padding-left: 10px;
+    /* border-left: 1px solid #69443c;
+    padding-left: 10px; */
 }
 
 .img-holder {

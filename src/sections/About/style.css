@@ -1,6 +1,6 @@
 #about {
     min-height: 100vh;
-    background-color: #30334b;
+    background-color: #0E1323;
     padding-top: 5%;
     padding-bottom: 5%;
 }
@@ -15,8 +15,8 @@
 .about-heading {
     font-family: 'the_seasonsregular';
     color: #dbc4bc;
-    border-left: 1px solid #dbc4bc;
-    padding-left: 10px;
+    /* border-left: 1px solid #dbc4bc;
+    padding-left: 10px; */
 }
 
 .period {

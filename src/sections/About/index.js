@@ -11,21 +11,22 @@ function About({refSection}) {
             <div className="col-12 col-md-6 col-lg-6 pr-md-5 pr-lg-5 order-md-1 order-lg-1 order-2">
               <p>
                 Frizzell D’Souza is a singer<span className='montserrat'>-</span>songwriter based out of
-                Bangalore, who first showcased her talent by uploading song
-                covers on her Youtube channel back in 2018.
+                Bangalore, based out of Bangalore, who started out with her own renditions of songs on YouTube in 
+                2018 and got into songwriting during the 2020 pandemic. 
               </p>
 
               <p>
-                Two years since then and with consistent effort put along the
-                way, she has built a family of 25000<span className='montserrat'>+</span> subscribers on YouTube and
-                a large following on her social media as well. The core of her
-                music lies in translating emotions and is also influenced by her
-                love for retro classics and indie music.
+                Since 2018, she has released four singles and with consistent effort has garnered a collective audience of 
+                55,000<span className='montserrat'>+</span> listeners across her social media. 
+              </p>
+
+              <p>
+                She has a penchant for simple melodies and songwriting <span className='montserrat'>-</span> The core of her music lies in translating emotions 
+                and is also influenced by her love for retro classics and indie music.
               </p>
               <p>
-                Currently pursuing her bachelor<span className='montserrat'>'</span>s in Architecture, on the
-                sidelines, Frizzell is also an art enthusiast who is known for
-                her signature denim artworks.
+                As she comes to the end of her course in bachelor's in Architecture, Frizzell is also currently 
+                working on releasing her debut EP.
               </p>
 
 
@@ -34,7 +35,7 @@ function About({refSection}) {
               </a>
             </div>
             <div className="col-12 col-md-6 col-lg-6 order-lg-2 order-md-2 order-1">
-              <img src="/images/about.png" alt="Missing" className='img-fluid about-img'/>
+              <img src="/images/about_latest.jpg" alt="Missing" className='img-fluid about-img'/>
             </div>
           </div>
         </div>

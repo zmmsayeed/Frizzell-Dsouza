@@ -41,3 +41,17 @@
         letter-spacing: 1.5px;
     }
 }
+
+/* Social Media link styling */
+#contact a.social-box {
+    padding: 10px 15px;
+    color: #30334b;
+}
+
+#contact .social-box:first-child {
+    padding-left: 0;
+}
+
+#contact a.social-box:hover {
+    color: #42373b;
+}

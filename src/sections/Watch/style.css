@@ -6,8 +6,8 @@
 #watch h2 {
     color: #69443c;
     font-family: 'the_seasonsregular';
-    border-left: 1px solid #69443c;
-    padding-left: 10px;
+    /* border-left: 1px solid #69443c;
+    padding-left: 10px; */
 }
 
 .watch-blue {
@@ -17,7 +17,7 @@
 
 .watch-blue h2 {
     color: #dbc4bc !important;
-    border-left: 1px solid #dbc4bc !important;
+    /* border-left: 1px solid #dbc4bc !important; */
 }
 
 .controls-top {

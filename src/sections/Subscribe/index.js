@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import moment from "moment";
 import { Country, State, City } from "country-state-city";
 import "./style.css";
@@ -12,8 +13,15 @@ class Subscribe extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      country: "",
-      stateCity: []
+      email: '',
+      country: '',
+      stateCity: [],
+      stateCitySelected: '',
+      bdayMonth: '',
+      bdayDay: '',
+      bdayYear: '',
+      error: '',
+      loadingSub: false
     };
   }
 
@@ -45,6 +53,59 @@ class Subscribe extends React.Component {
     });
   }
 
+  onChange = (event) => {
+    this.setState({
+      [event.target.name]: event.target.value
+    });
+  }
+
+  subscribeUser = () => {
+    console.log("subscribeUser");
+
+    let isEmailValid = isValidEmail(this.state.email);
+    if (!isEmailValid) {
+      this.setState({
+        error: "Please enter a valid email address"
+      });
+      return;
+    }
+
+    if (this.state.country === '' || this.state.stateCitySelected === '') {
+      this.setState({
+        error: "Please select a country, state, and city."
+      });
+      return;
+    }
+
+    if (this.state.bdayMonth === '' || this.state.bdayDay === '' || this.state.bdayYear === '') {
+      this.setState({
+        error: "Please enter your birthday."
+      });
+      return;
+    } else {
+      // get present year
+      let presentYear = moment().format("YYYY");
+      if (this.state.bdayYear > presentYear || (this.state.bdayDay).length > 2 || (this.state.bdayYear).length > 4) {
+        this.setState({
+          error: "Please enter a valid birthday."
+        });
+        return;
+      }
+    }
+
+    this.setState({
+      error: '',
+      loadingSub: true,
+    }, () => {
+      axios.get('https://5l1k0zjn2m.execute-api.ap-south-1.amazonaws.com/test/subscribe?email='+ this.state.email  + '&birthdayDay=06&birthdayMonth=12&birthdayYear=1995&city=Bangalore&country=India&state=Karnataka')
+      .then(response => {
+        console.log('Response: ', response);
+      }).catch(err => {
+        console.log("Error: ", err.response.data);
+      })
+    });
+  }
+
   render() {
     let months = moment.months();
     
@@ -70,7 +131,7 @@ class Subscribe extends React.Component {
           <div className="col-4"></div>
 
           <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4 mt-2">
-            <input type="text" placeholder="Enter Your Email Address" />
+            <input type="email" name="email" value={this.state.email} onChange={this.onChange} placeholder="Enter Your Email Address" />
           </div>
 
           <div className="col-4"></div>
@@ -103,7 +164,7 @@ class Subscribe extends React.Component {
             </select>
           </div>
           <div className="col-md-2 col-lg-2 col-12 mt-2">
-            <select name="country" id="country">
+            <select name="stateCitySelected" id="country" onChange={this.onChange}>
               <option value="" selected disabled>
                 Select State/City
               </option>
@@ -113,7 +174,6 @@ class Subscribe extends React.Component {
                 ))  
               }
             </select>
-            {/* <input type="text" placeholder="Select a country/region" /> */}
           </div>
 
           <div className="col-4"></div>
@@ -124,28 +184,38 @@ class Subscribe extends React.Component {
           <div className="col-4"></div>
 
           <div className="col-md-2 col-lg-2 col-12 offset-md-4 offset-lg-4 mt-2">
-            <select name="month" id="month">
+            <select name="bdayMonth" id="month"  onChange={this.onChange}>
               <option value="" selected disabled>
                 Month
               </option>
               {months.map((month, index) => (
-                <option key={index} value={index}>
+                <option key={index} value={index+1}>
                   {month}
                 </option>
               ))}
             </select>
           </div>
           <div className="col-md-1 col-lg-1 col-12 mt-2">
-            <input type="number" placeholder="Year" />
+            <input name="bdayYear" value={this.state.bdayYear} type="number" placeholder="Year" onChange={this.onChange} />
           </div>
           <div className="col-md-1 col-lg-1 col-12 mt-2">
-            <input type="number" placeholder="Day" />
+            <input name="bdayDay" value={this.state.bdayDay} type="number" placeholder="Day" onChange={this.onChange} />
           </div>
 
           <div className="col-4"></div>
 
+          <div className={
+            this.state.error !== ''
+              ? "col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4 mt-4"
+              : "col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4 mt-4 d-none"
+          }>
+            <div className="alert alert-danger" role="alert">
+              {this.state.error}
+            </div>
+          </div>
+
           <div className="col-4 offset-md-4 offset-lg-4 mt-5">
-            <button className="btn btn-primary btn-block">Subscribe</button>
+            <button className="btn btn-primary btn-block" onClick={this.subscribeUser}>Subscribe</button>
           </div>
         </div>
         </div>
@@ -155,3 +225,7 @@ class Subscribe extends React.Component {
 }
 
 export default Subscribe;
+
+function isValidEmail(email) {
+  return /\S+@\S+\.\S+/.test(email);
+}

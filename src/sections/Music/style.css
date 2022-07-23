@@ -1,6 +1,6 @@
 #music {
     min-height: 100vh;
-    padding: 10% 0;
+    padding: 5% 0;
     /* background: linear-gradient(-45deg, #fed5db, #e5d8f3, #b0d8e7, #e7dda1); */
     background-size: 400% 400%;
     animation: gradient 1s ease infinite;
@@ -12,8 +12,8 @@
 #music h1 {
     color: #69443c;
     font-family: 'the_seasonsregular';
-    border-left: 1px solid #69443c;
-    padding-left: 10px;
+    /* border-left: 1px solid #69443c;
+    padding-left: 10px; */
 }
 
 .card {
@@ -54,7 +54,10 @@
 
 
 .music-title {
+    font-family: 'the_seasonsregular';
     color: #69443c !important;
+    letter-spacing: 0.8px;
+    font-size: 1.1em;
 }
 
   

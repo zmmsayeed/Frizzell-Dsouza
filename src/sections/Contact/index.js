@@ -1,5 +1,6 @@
 import { MdEmail } from 'react-icons/md';
 import { FaPhoneSquareAlt } from 'react-icons/fa';
+import { FaInstagram, FaYoutube, FaTwitter, FaSpotify } from 'react-icons/fa';
 
 import "../../index.css";
 import "./style.css";
@@ -26,7 +27,7 @@ function Contact({ refSection }) {
         </div>
         <div className="container contact-content">
           <div className="row w-100">
-            <div className="col-12 col-md-6 col-lg-6 text-center">
+            <div className="col-12 col-md-6 col-lg-6 text-center mt-4">
               <h1 className="contact-getintouch">Get In <br /> Touch</h1>
             </div>
             <div className="col-12 col-md-6 col-lg-6 d-flex justify-content-center flex-column">
@@ -37,6 +38,23 @@ function Contact({ refSection }) {
               <p>
                 <FaPhoneSquareAlt className='mr-2'/>
                 <span className="montserrat">+</span>91 99<span className="montserrat">4</span>59 93522
+              </p>
+
+              <p className='mt-5'>
+                <div className="social-media-wrapper">
+                  <a href="https://www.instagram.com/frizzell.dsouza" target="_blank" rel="noopener noreferrer" className='social-box'>
+                      <FaInstagram size={30} />
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCpDjYVQS411CBBw0thoB0Sw" target="_blank" rel="noopener noreferrer" className='social-box'>
+                      <FaYoutube size={35} />
+                  </a>
+                  <a href="https://twitter.com/frizzelldsouza" target="_blank" rel="noopener noreferrer" className='social-box'>
+                      <FaTwitter size={30} />
+                  </a>
+                  <a href="https://open.spotify.com/artist/17j8WfojaUlIDrnDG7IfIQ?si=Zs7vG1foR_S3znxY0wiQbQ" target="_blank" rel="noopener noreferrer" className='social-box'>
+                      <FaSpotify size={30} />
+                  </a>
+                </div>
               </p>
             </div>
           </div>

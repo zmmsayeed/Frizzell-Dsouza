@@ -8,13 +8,13 @@ function Watch({refSection}) {
 
             <div className="row">
                 <div className="col-12 col-md-6 col-lg-6">
-                    <iframe width="100%" height="340" src="https://www.youtube.com/embed/PsKpTftgbOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="340" src="https://www.youtube.com/embed/PsKpTftgbOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     <p>Foolish Once Again</p>
                 </div>
                 <div className="col-12 col-md-6 col-lg-6">
                     <div className="row">
                         <div className="col-12 col-md-6 col-lg-6">
-                            <iframe width="100%" height="150" src="https://www.youtube.com/embed/ew8g3piv5M4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="100%" height="150" src="https://www.youtube.com/embed/ew8g3piv5M4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             <p>Drown Away</p>
                         </div>
                         <div className="col-12 col-md-6 col-lg-6">
@@ -22,7 +22,7 @@ function Watch({refSection}) {
                             <p>Fall</p>
                         </div>
                         <div className="col-12 col-md-6 col-lg-6">
-                            <iframe width="100%" height="150" src="https://www.youtube.com/embed/i7bWmnJaSE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="100%" height="150" src="https://www.youtube.com/embed/i7bWmnJaSE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             <p>New</p>
                         </div>
                         <div className="col-12 col-md-6 col-lg-6 d-lg-block d-md-block d-none">
@@ -57,17 +57,17 @@ function Watch({refSection}) {
     <div class="carousel-item active mb-5">
 
       <div class="row">
-        <div class="col-md-4">
-            <iframe width="100%" height="200" src="https://www.youtube.com/embed/lgfbAIQ7r8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="col-md-3 offset-md-1 mt-4">
+            <iframe width="100%" height="150" src="https://www.youtube.com/embed/lgfbAIQ7r8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             
         </div>
 
         <div class="col-md-4 clearfix d-none d-md-block">
-            <iframe width="100%" height="200" src="https://www.youtube.com/embed/WM4hGt3bW80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/WM4hGt3bW80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
 
-        <div class="col-md-4 clearfix d-none d-md-block">
-            <iframe width="100%" height="200" src="https://www.youtube.com/embed/Ife54T6oDZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="col-md-3 clearfix d-none d-md-block mt-4">
+            <iframe width="100%" height="150" src="https://www.youtube.com/embed/Ife54T6oDZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
       </div>
 
@@ -76,16 +76,16 @@ function Watch({refSection}) {
     <div class="carousel-item mb-5">
 
         <div class="row">
-            <div class="col-md-4">
-              <iframe width="100%" height="200" src="https://www.youtube.com/embed/j6t9EQ6YBJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>              
+            <div class="col-md-3 offset-md-1 mt-4">
+              <iframe width="100%" height="150" src="https://www.youtube.com/embed/j6t9EQ6YBJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>              
             </div>
 
             <div class="col-md-4 clearfix d-none d-md-block">
-              <iframe width="100%" height="200" src="https://www.youtube.com/embed/dUt09Vg9sNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="100%" height="200" src="https://www.youtube.com/embed/dUt09Vg9sNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
 
-            <div class="col-md-4 clearfix d-none d-md-block">
-              <iframe width="100%" height="200" src="https://www.youtube.com/embed/xyAZJw1-pHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="col-md-3 clearfix d-none d-md-block mt-4">
+              <iframe width="100%" height="150" src="https://www.youtube.com/embed/xyAZJw1-pHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
         </div>
 

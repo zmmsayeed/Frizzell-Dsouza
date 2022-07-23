@@ -43,8 +43,22 @@
 
 .navbar-nav li > a:hover {
     /* border-bottom: 2px solid #8ccfbc; */
-    background-color: #dbc4bc !important;
-    color: #30334b !important;
+    /* background-color: #dbc4bc !important; */
+    color: lightgray !important;
+}
+
+.navbar-nav > li {
+    float: left;
+    position: relative;
+}
+
+.navbar-nav li > a:hover::after {
+    border-bottom: 1px solid white !important;
+    bottom: -5px;
+    content: " ";
+    left: 0;
+    position: absolute;
+    right: 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -58,15 +72,26 @@
 }
 
 .navbar-nav .active>.nav-link {
-    color: #30334b !important;
-    /* font-weight: bold !important; */
-    background-color: #eae6e1 !important;
+    color: white !important;
 }
 
 .bg-contact .navbar-nav .active>.nav-link {
+    color: #30334b !important;
+}
+
+.navbar-nav .active>.nav-link::after {
+    border-bottom: 1px solid white !important;
+    bottom: -5px;
+    content: " ";
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+
+/* .bg-contact .navbar-nav .active>.nav-link {
     color: #dbc4bc !important;
     background-color: #0e1323 !important;
-}
+} */
 
 .bg-translucent {
     background-color: rgba(14, 19, 35, 0.5) !important;
@@ -76,4 +101,30 @@
     .bg-transparent {
         background-color: rgba(14, 19, 35, 0.5) !important;
     }
+}
+
+.bg-contact .navbar-nav .active>.nav-link::after {
+    border-bottom: 1px solid #30334b !important;
+    bottom: -5px;
+    content: " ";
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+
+.bg-contact .navbar-nav li > a:hover::after {
+    border-bottom: 1px solid #30334b !important;
+    bottom: -5px;
+    content: " ";
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+
+.bg-subscribe .navbar-nav li > a {
+    color: #E8E29A !important;
+}
+
+.bg-subscribe .navbar-nav .active>.nav-link {
+    color: white !important;
 }
