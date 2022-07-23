@@ -62,10 +62,10 @@ function Footer() {
                 <BsMusicNoteBeamed size={20} />
               </a>
             </p>
-            <p>
+            {/* <p>
               <a href="#">Terms & Conditions</a> | 
               Privacy Policy
-            </p>
+            </p> */}
           </div>
 
             <div className="col-md-4 col-12 col-lg-4">
@@ -109,7 +109,7 @@ function Footer() {
 
       <div className="container text-center">
         <p className="copyright">
-            Copyright &copy; {new Date().getFullYear()} The Urban Weaver Project. All rights reserved.
+            Copyright &copy; {new Date().getFullYear()} The Urban Weaver. All rights reserved.
         </p>
       </div>
     </footer>
