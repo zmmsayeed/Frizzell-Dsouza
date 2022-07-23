@@ -126,8 +126,11 @@ class Subscribe extends React.Component {
           <div className="row">
             <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4">
               <h3 className={this.state.error === '' ? "d-block text-center" : "d-none"}>
-                Thank you for subscribing<span className="montserrat">!</span>
+                Thank you for joining my community<span className="montserrat">!</span>
               </h3>
+              <h5 className={this.state.error === '' ? "d-block text-center" : "d-none"}>
+                PS<span className="montserrat">:</span> Your inbox has something waiting for you<span className="montserrat">.</span> Check your spam folder if you don<span className="montserrat">'</span>t see it yet<span className="montserrat">.</span>
+              </h5>
               <h3 className="text-center">{this.state.error}</h3>
             </div>
           </div>
