@@ -21,7 +21,7 @@ class Subscribe extends React.Component {
       bdayDay: '',
       bdayYear: '',
       error: '',
-      loadingSub: false
+      loadingSub: true
     };
   }
 
@@ -125,12 +125,12 @@ class Subscribe extends React.Component {
         <div className={this.state.loadingSub ? "container-fluid" : "container-fluid d-none"}>
           <div className="row">
             <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4">
-              <h3 className={this.state.error === '' ? "d-block text-center" : "d-none"}>
+              <h3 className={this.state.error === '' ? "d-block text-center mb-4" : "d-none"}>
                 Thank you for joining my community<span className="montserrat">!</span>
               </h3>
-              <h5 className={this.state.error === '' ? "d-block text-center" : "d-none"}>
-                PS<span className="montserrat">:</span> Your inbox has something waiting for you<span className="montserrat">.</span> Check your spam folder if you don<span className="montserrat">'</span>t see it yet<span className="montserrat">.</span>
-              </h5>
+              <h4 className={this.state.error === '' ? "d-block text-center" : "d-none"}>
+                PS<span className="montserrat">:</span> Your inbox has something waiting for you<span className="montserrat">.</span><br />Check your spam folder if you don<span className="montserrat">'</span>t see it yet<span className="montserrat">.</span>
+              </h4>
               <h3 className="text-center">{this.state.error}</h3>
             </div>
           </div>
