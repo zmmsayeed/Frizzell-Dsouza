@@ -39,52 +39,48 @@ function Watch({refSection}) {
                 <h2 className="mb-5">Frizzell<span className="montserrat">'</span>s covers</h2>
             </div>
 
-            <div class="container my-4">
-
-
-<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-
+            <div className="container my-4">
+              <div id="multi-item-example" className="carousel slide carousel-multi-item" data-ride="carousel">
   
+              <ol className="carousel-indicators mt-5">
+                <li data-target="#multi-item-example" data-slide-to="0" className="active"></li>
+                <li data-target="#multi-item-example" data-slide-to="1"></li>
+                {/* <li data-target="#multi-item-example" data-slide-to="2"></li> */}
+              </ol>
 
-  <ol class="carousel-indicators mt-5">
-    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-    <li data-target="#multi-item-example" data-slide-to="1"></li>
-    {/* <li data-target="#multi-item-example" data-slide-to="2"></li> */}
-  </ol>
+  <div className="carousel-inner" role="listbox">
 
-  <div class="carousel-inner" role="listbox">
+    <div className="carousel-item active mb-5">
 
-    <div class="carousel-item active mb-5">
-
-      <div class="row">
-        <div class="col-md-3 offset-md-1 mt-4">
+      <div className="row">
+        <div className="col-4 col-md-3 col-lg-3 offset-lg-1 offset-md-1 mt-4">
             <iframe width="100%" height="150" src="https://www.youtube.com/embed/lgfbAIQ7r8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             
         </div>
 
-        <div class="col-md-4 clearfix d-none d-md-block">
+        <div className="col-4 col-md-4 col-lg-4 clearfix">
             <iframe width="100%" height="200" src="https://www.youtube.com/embed/WM4hGt3bW80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
 
-        <div class="col-md-3 clearfix d-none d-md-block mt-4">
+        <div className="col-4 col-md-3 col-lg-3 clearfix  mt-4">
             <iframe width="100%" height="150" src="https://www.youtube.com/embed/Ife54T6oDZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
       </div>
 
     </div>
 
-    <div class="carousel-item mb-5">
+    <div className="carousel-item mb-5">
 
-        <div class="row">
-            <div class="col-md-3 offset-md-1 mt-4">
+        <div className="row">
+            <div className="col-4 col-md-3 col-lg-3 offset-lg-1 offset-md-1 mt-4">
               <iframe width="100%" height="150" src="https://www.youtube.com/embed/j6t9EQ6YBJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>              
             </div>
 
-            <div class="col-md-4 clearfix d-none d-md-block">
+            <div className="col-4 col-md-4 col-lg-4 clearfix">
               <iframe width="100%" height="200" src="https://www.youtube.com/embed/dUt09Vg9sNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
 
-            <div class="col-md-3 clearfix d-none d-md-block mt-4">
+            <div className="col-4 col-md-3 col-lg-3 clearfix  mt-4">
               <iframe width="100%" height="150" src="https://www.youtube.com/embed/xyAZJw1-pHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
         </div>
@@ -93,16 +89,16 @@ function Watch({refSection}) {
 
   </div>
   
-  {/* <div class="controls-top">
-    <a class="btn-floating" href="#multi-item-example" data-slide="prev">Previous</a>
-    <a class="btn-floating" href="#multi-item-example" data-slide="next">Next</a>
+  {/* <div className="controls-top">
+    <a className="btn-floating" href="#multi-item-example" data-slide="prev">Previous</a>
+    <a className="btn-floating" href="#multi-item-example" data-slide="next">Next</a>
   </div> */}
 
-  <a class="carousel-control-prev" href="#multi-item-example" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
+  <a className="carousel-control-prev" href="#multi-item-example" data-slide="prev">
+    <span className="carousel-control-prev-icon"></span>
   </a>
-  <a class="carousel-control-next" href="#multi-item-example" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
+  <a className="carousel-control-next" href="#multi-item-example" data-slide="next">
+    <span className="carousel-control-next-icon"></span>
   </a>
 
 </div>

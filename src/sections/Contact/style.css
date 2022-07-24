@@ -4,6 +4,13 @@
     /* padding: 5% 0; */
 }
 
+@media only screen and (max-width: 600px) {
+    #contact {
+        min-height: auto;
+        padding: 10% 0;
+    }
+}
+
 .contact-content {
     min-height: 50vh;
     padding: 5% 0;
@@ -35,9 +42,10 @@
 
 @media only screen and (max-width: 600px) {
     #contact p {
+        text-align: center;
         font-family: 'the_seasonslight';
         font-weight: bold;
-        font-size: 0.5rem;
+        font-size: 1rem;
         letter-spacing: 1.5px;
     }
 }

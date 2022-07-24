@@ -68,19 +68,19 @@ function Music({ refSection }) {
   return (
     <div id="music" ref={refSection}>
       <div className="container py-5">
-        <h1>Music</h1>
+        <h1 className="offset-md-1 offset-lg-1">Music</h1>
 
         <div className="row">
           {musicArr.map((music, index) => {
             let leftShift = index % 3 === 0;
             let topMargin = index > 2;
 
-            let musicDivClass = "col-md-3 col-lg-3 p-4";
-            if (!leftShift) {
+            let musicDivClass = "col-6 col-md-3 col-lg-3 p-3 p-md-4 p-lg-4 offset-md-1 offset-lg-1";
+            if (leftShift) {
               musicDivClass += " offset-md-1 offset-lg-1";
             }
             if (topMargin) {
-              musicDivClass += " mt-2";
+              musicDivClass += " mt-0 mt-md-2 mt-lg-2";
             }
 
             return (

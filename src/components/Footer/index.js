@@ -68,7 +68,7 @@ function Footer() {
             </p> */}
           </div>
 
-            <div className="col-md-4 col-12 col-lg-4">
+            <div className="col-md-4 col-6 col-lg-4">
                 <p className="heading mb-1">Quick Links</p>
                 <div className="row">
                     <div className="col-12 col-md-6 col-lg-6">
@@ -85,7 +85,7 @@ function Footer() {
                 </div>  
             </div>
 
-            <div className="col-md-4 col-12 col-lg-4">
+            <div className="col-md-4 col-6 col-lg-4">
                 <p className="heading mb-1">Resources</p>
                 <div className="row">
                     <div className="col-12 col-md-6 col-lg-6">

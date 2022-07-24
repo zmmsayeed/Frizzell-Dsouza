@@ -63,9 +63,9 @@ function Navbar({activeSection}) {
               <li className={activeSection === "gallery" ? "nav-item active mr-md-4 mr-lg-4" : "nav-item mr-md-4 mr-lg-4"}>
                 <a className="nav-link" href="#gallery">Gallery</a>
               </li>
-              {/* <li className={activeSection === "press" ? "nav-item active mr-md-4 mr-lg-4" : "nav-item mr-md-4 mr-lg-4"}>
+              <li className={activeSection === "press" ? "nav-item active mr-md-4 mr-lg-4" : "nav-item mr-md-4 mr-lg-4"}>
                 <a className="nav-link" href="#press">Press</a>
-              </li> */}
+              </li>
               <li className={activeSection === "contact" ? "nav-item active" : "nav-item"}>
                 <a className="nav-link" href="#contact">Contact</a>
               </li>

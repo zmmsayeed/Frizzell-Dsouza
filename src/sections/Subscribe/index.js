@@ -144,33 +144,21 @@ class Subscribe extends React.Component {
                 <span className="montserrat">'</span>Souza
               </h3>
             </div>
+          </div>
 
-            <div className="col-4"></div>
-            
-              <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4 mt-4">
-                <h5>Email Address</h5>
-              </div>
-
-              <div className="col-4"></div>
-
-              <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4 mt-2">
+          <div className="row">
+            <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4 mt-4">
+              <h5>Email Address</h5>
+            </div>
+            <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4 mt-2">
                 <input type="email" name="email" value={this.state.email} onChange={this.onChange} placeholder="Enter Your Email Address" />
-              </div>
+            </div>
+          </div>
 
-              <div className="col-4"></div>
+          <div className="row">
 
               <div className="col-md-2 col-lg-2 col-12 offset-md-4 offset-lg-4 mt-4">
                 <h5>Country</h5>
-              </div>
-              <div className="col-md-2 col-lg-2 col-12 mt-4">
-                <h5>
-                  State <span className="montserrat">/</span> City
-                </h5>
-              </div>
-
-              <div className="col-4"></div>
-
-              <div className="col-md-2 col-lg-2 col-12 offset-md-4 offset-lg-4 mt-2">
                 <select
                   name="country"
                   id="country"
@@ -186,7 +174,11 @@ class Subscribe extends React.Component {
                   ))}
                 </select>
               </div>
-              <div className="col-md-2 col-lg-2 col-12 mt-2">
+
+              <div className="col-md-2 col-lg-2 col-12 mt-4">
+                <h5>
+                  State <span className="montserrat">/</span> City
+                </h5>
                 <select name="stateCitySelected" id="country" onChange={this.onChange}>
                   <option value="" selected disabled>
                     Select State/City
@@ -198,8 +190,9 @@ class Subscribe extends React.Component {
                   }
                 </select>
               </div>
-
-              <div className="col-4"></div>
+            </div>
+            
+            <div className="row">
 
               <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4 mt-4">
                 <h5>Birthday</h5>
@@ -224,8 +217,9 @@ class Subscribe extends React.Component {
               <div className="col-md-1 col-lg-1 col-12 mt-2">
                 <input name="bdayDay" value={this.state.bdayDay} type="number" placeholder="Day" onChange={this.onChange} />
               </div>
+            </div>
 
-              <div className="col-4"></div>
+            <div className="row">
 
               <div className={
                 this.state.error !== ''
@@ -236,8 +230,10 @@ class Subscribe extends React.Component {
                   {this.state.error}
                 </div>
               </div>
+            </div>
 
-              <div className="col-4 offset-md-4 offset-lg-4 mt-5">
+            <div className="row">
+              <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4 mt-5">
                 <button className="btn btn-primary btn-block" onClick={this.subscribeUser}>Subscribe</button>
               </div>
           </div>

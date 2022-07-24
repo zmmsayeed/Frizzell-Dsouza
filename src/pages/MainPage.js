@@ -3,6 +3,7 @@ import About from '../sections/About';
 import Contact from '../sections/Contact';
 import MainSection from '../sections/MainSection';
 import Music from '../sections/Music';
+import Press from '../sections/Press';
 import Subscribe from '../sections/Subscribe';
 
 import { useInView } from "react-intersection-observer";
@@ -18,6 +19,7 @@ function MainPage() {
     const [watchRef, watchInView] = useInView({ threshold: 0.5 });
     const [contactRef, contactInView] = useInView({ threshold: 0.5 });
     const [galleryRef, galleryInView] = useInView({ threshold: 0.5 });
+    const [pressRef, pressInView] = useInView({ threshold: 0.5 });
 
     let activeSection = "";
 
@@ -35,6 +37,8 @@ function MainPage() {
         activeSection = "watch";
     else if (galleryInView)
         activeSection = "gallery";
+    else if (pressInView)
+        activeSection = "press";
 
     return (
         <>
@@ -45,6 +49,7 @@ function MainPage() {
             <About refSection={aboutRef} />
             <Watch refSection={watchRef} />
             <Gallery refSection={galleryRef} />
+            <Press refSection={pressRef} />
             <Contact refSection={contactRef} />
             <Footer />
         </>

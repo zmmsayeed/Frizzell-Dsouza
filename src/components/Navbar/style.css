@@ -126,5 +126,14 @@
 }
 
 .bg-subscribe .navbar-nav .active>.nav-link {
-    color: white !important;
+    color: #E8E29A !important;
+}
+
+.bg-subscribe .navbar-nav .active>.nav-link::after {
+    border-bottom: 1px solid #E8E29A !important;
+    bottom: -5px;
+    content: " ";
+    left: 0;
+    position: absolute;
+    right: 0;
 }
