@@ -72,15 +72,15 @@ function Footer() {
                 <p className="heading mb-1">Quick Links</p>
                 <div className="row">
                     <div className="col-12 col-md-6 col-lg-6">
-                    <a href="#" className="footer-link">Music</a>
-                    <a href="#" className="footer-link">Subscribe</a>
-                    <a href="#" className="footer-link">About</a>
-                    <a href="#" className="footer-link">Watch</a>
+                    <a href="#music" className="footer-link">Music</a>
+                    <a href="#subscribe" className="footer-link">Subscribe</a>
+                    <a href="#about" className="footer-link">About</a>
+                    <a href="#watch" className="footer-link">Watch</a>
                     </div>
                     <div className="col-12 col-md-6 col-lg-6">
-                    <a href="#" className="footer-link">Gallery</a>
-                    <a href="#" className="footer-link">Press</a> 
-                    <a href="#" className="footer-link">Contact</a>
+                    <a href="#gallery" className="footer-link">Gallery</a>
+                    <a href="#press" className="footer-link">Press</a> 
+                    <a href="#contact" className="footer-link">Contact</a>
                     </div>
                 </div>  
             </div>
@@ -89,16 +89,16 @@ function Footer() {
                 <p className="heading mb-1">Resources</p>
                 <div className="row">
                     <div className="col-12 col-md-6 col-lg-6">
-                    <a href="#" className="footer-link">The Hindu</a>
+                    <a href="https://www.thehindu.com/entertainment/music/mangaluru-singer-frizzell-dsouzas-latest-single-foolish-once-again-a-love-ballad/article34738014.ece" className="footer-link">The Hindu</a>
                     <a href="#" className="footer-link">Times of India</a>
                     <a href="#" className="footer-link">Browngirl</a>
-                    <a href="#" className="footer-link">Rolling Stone</a>
+                    <a href="https://rollingstoneindia.com/tag/frizzell-dsouza/" className="footer-link">Rolling Stone</a>
                     </div>
                     <div className="col-12 col-md-6 col-lg-6">
                     <a href="#" className="footer-link">Springtide</a>
-                    <a href="#" className="footer-link">Platform Magazine</a> 
-                    <a href="#" className="footer-link">Homegrown</a>
-                    <a href="#" className="footer-link">Radio City</a>
+                    <a href="https://www.platform-mag.com/music/frizzell-dsouza.html" className="footer-link">Platform Magazine</a> 
+                    <a href="https://homegrown.co.in/article/805438/homegrowns-picks-from-music-last-week-hari-sukhmani-frizzell-dsouza-punk-on-toast-more" className="footer-link">Homegrown</a>
+                    <a href="https://www.radiocity.in/indie/news/women-of-indie-meet-these-8-homegrown-artists-who-redefine-independent-music--129" className="footer-link">Radio City</a>
                     </div>
                 </div>
             </div>  
