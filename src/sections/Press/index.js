@@ -10,25 +10,25 @@ function Press({refSection}) {
                             <div className='press-container'>
                                 <h2 className="mb-md-5 mb-lg-5 mb-4 press-heading">In The Press</h2>
 
-                                <div className='row mt-md-5 mt-lg-5'>
-                                    <div className='col-4 col-md-3 col-lg-3'>
+                                <div className='row mt-md-5 mt-lg-5 text-center'>
+                                    <div className='col-4 col-md-3 col-lg-3 offset-md-1 offset-lg-1'>
                                         <a href='https://www.thehindu.com/entertainment/music/mangaluru-singer-frizzell-dsouzas-latest-single-foolish-once-again-a-love-ballad/article34738014.ece' target={'_blank'}>
                                             <img src='/images/press/thehindu.png' className='img-fluid' />
                                         </a>
                                     </div>
-                                    <div className='col-4 col-md-3 offset-md-1 offset-lg-1 col-lg-3'>
+                                    <div className='col-4 col-md-3  col-lg-3 offset-md-1 offset-lg-1'>
                                         <a href='' target={'_blank'}>
                                             <img src='/images/press/toi.png' className='img-fluid' />
                                         </a>
                                     </div>
-                                    <div className='col-4 col-md-2 offset-md-1 offset-lg-1 col-lg-2'>
+                                    <div className='col-4 col-md-2 col-lg-2 offset-md-1 offset-lg-1'>
                                         <a href='' target={'_blank'}>
-                                            <img src='/images/press/BG.png' className='img-fluid' />
+                                            <img src='/images/press/bg.png' className='img-fluid' />
                                         </a>
                                     </div>
                                 </div>
 
-                                <div className='row'>
+                                <div className='row text-center'>
                                     <div className='col-6 col-md-4 col-lg-3 offset-md-2'>
                                         <a href='https://rollingstoneindia.com/tag/frizzell-dsouza/' target={'_blank'}>
                                             <img src='/images/press/rollingstones.png' className='img-fluid' />
@@ -40,20 +40,26 @@ function Press({refSection}) {
                                         </a>
                                     </div>
                                 </div>
-                                <div className='row'>
-                                    <div className='col-4 col-md-3 col-lg-3 mt-0 mt-md-3 mt-lg-3'>
-                                        <img src='/images/press/platform.jpg' className='img-fluid' />
+                                <div className='row text-center mt-4'>
+                                    <div className='col-4 col-md-3 col-lg-3 mt-0 mt-md-3 mt-lg-3 offset-md-1 offset-lg-1'>
+                                        <a href='https://www.platform-mag.com/music/frizzell-dsouza.html' target={'_blank'}>
+                                            <img src='/images/press/platform.jpg' className='img-fluid' />
+                                        </a>
                                     </div>
                                     <div className='col-4 col-md-3 offset-md-1 offset-lg-1 col-lg-3'>
+                                        <a href='https://homegrown.co.in/article/805438/homegrowns-picks-from-music-last-week-hari-sukhmani-frizzell-dsouza-punk-on-toast-more' target={'_blank'}>
                                         <img src='/images/press/homegrown.png' className='img-fluid' />
+                                        </a>
                                     </div>
-                                    <div className='col-4 col-md-2 offset-md-1 offset-lg-1 col-lg-2'>
-                                        <img src='/images/press/radiocity.png' className='img-fluid' />
+                                    <div className='col-4 col-md-3 offset-md-1 offset-lg-1 col-lg-3'>
+                                        <a href='https://www.radiocity.in/indie/news/women-of-indie-meet-these-8-homegrown-artists-who-redefine-independent-music--129' target={'_blank'}>
+                                            <img src='/images/press/radiocity.png' className='img-fluid' />
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-12 col-md-3 col-lg-3 p-5 bg-dark press-read-section">
+                        <div className="col-12 col-md-3 col-lg-3 bg-dark press-read-section">
                             <div className='press-read mb-4'>
                                 <img src='/images/press/thehindu.png' className='img-fluid mb-3' width={'100px'} />
                                 <h5>Mangaluru singer Frizzell D’Souza’s latest single ‘Foolish Once Again’, a love ballad</h5>
