@@ -93,10 +93,22 @@ class Subscribe extends React.Component {
       }
     }
 
+    console.log("Email: " + this.state.email);
+    console.log("Country: " + this.state.country);
+    // console.log("State: " + this.state.stateCitySelected);
+    console.log("Birthday: " + this.state.bdayMonth + "/" + this.state.bdayDay + "/" + this.state.bdayYear);
+
+    let stateCityToSplit = this.state.stateCitySelected.split("/");
+    let stateToAPI = stateCityToSplit[0];
+    let cityToAPI = stateCityToSplit[1];
+
+    console.log("State: " + stateToAPI);
+    console.log("City: " + cityToAPI);
+
     this.setState({
       error: '',
     }, () => {
-      axios.get('https://5l1k0zjn2m.execute-api.ap-south-1.amazonaws.com/test/subscribe?email='+ this.state.email  + '&birthdayDay=06&birthdayMonth=12&birthdayYear=1995&city=Bangalore&country=India&state=Karnataka')
+      axios.get('https://5l1k0zjn2m.execute-api.ap-south-1.amazonaws.com/test/subscribe?email='+ this.state.email  + '&birthdayDay=' + this.state.bdayDay + '&birthdayMonth=' + this.state.bdayMonth + '&birthdayYear=' + this.state.bdayYear  + '&city=' + cityToAPI  + '&country=' + this.state.country  + '&state=' + stateToAPI)
       .then(response => {
         console.log('Response: ', response);
         if (response.status == 200) {

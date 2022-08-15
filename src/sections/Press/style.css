@@ -1,11 +1,17 @@
 #press {
     background-color: #EAE6E1;
+    min-height: 100vh;
 }
 .press-container {
+    min-height: 100vh;
     padding: 8% 10% 10% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .press-container div {
+    min-height: 100%;
     text-align: center !important;
 }
 
@@ -15,7 +21,7 @@
     font-family: 'the_seasonsbold';
 }
 
-.press-images1,
+/* .press-images1,
 .press-images2 {
     max-height: 250px;
     flex-direction:row;
@@ -44,9 +50,12 @@
     padding: 20px;
     width: 30%;
     order: 1;
-}
+} */
 
 .press-read-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding-top: 4% !important;
     padding-bottom: 2% !important;
 }
