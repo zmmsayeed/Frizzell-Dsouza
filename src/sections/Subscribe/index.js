@@ -7,7 +7,6 @@ import "./style.css";
 let countries = Country.getAllCountries();
 let states = State.getAllStates();
 let cities = City.getAllCities();
-
 class Subscribe extends React.Component {
 
   constructor(props) {
@@ -16,41 +15,49 @@ class Subscribe extends React.Component {
       email: '',
       country: '',
       stateCity: [],
-      stateCitySelected: '',
+      stateSelected: '',
+      citySelected: '',
       bdayMonth: '',
       bdayDay: '',
       bdayYear: '',
       error: '',
-      loadingSub: false
+      loadingSub: false,
+      countryStates: [],
+      stateCities: [],
     };
   }
 
   setCountry = (event) => {
 
+    let country = event.target.value;
+    country = countries.filter(country => country.isoCode === event.target.value)[0];
+
     let countryStates = states.filter(state => state.countryCode === event.target.value);
-    let countryCities = cities.filter(city => city.countryCode === event.target.value);
+    if (countryStates.length === 0) {
+      country = countries.filter(country => (country.name).toLowerCase() === (event.target.value).toLowerCase())[0]
+      countryStates = states.filter(state => state.countryCode === country.isoCode);
+    }
 
-    let newArr = [];
-
-    countryStates.forEach(state => {
-      countryCities.forEach(city => {
-        if (state.isoCode === city.stateCode) {
-          let newObj = {
-            stateCode: state.isoCode,
-            stateName: state.name,
-            city: city.name,
-            value: state.name + " / " + city.name
-          }
-
-          newArr.push(newObj);
-        }
-      })
-    })
+    // SORTING STATES ALPHABETICALLY
+    countryStates = countryStates.sort((a, b) => a.name.localeCompare(b.name));
 
     this.setState({
-      country: event.target.value,
-      stateCity: newArr
+      country: country.isoCode,
+      countryStates: countryStates
     });
+  }
+
+  changeState = (event) => {
+    let selectedState = states.filter(state => state.name === event.target.value)[0];
+    let stateCities = cities.filter(city => city.stateCode === selectedState.isoCode);
+
+    // SORTING CITIES ALPHABETICALLY
+    stateCities = stateCities.sort((a, b) => a.name.localeCompare(b.name));
+
+    this.setState({
+      stateCities: stateCities,
+      stateSelected: event.target.value
+    })
   }
 
   onChange = (event) => {
@@ -60,7 +67,6 @@ class Subscribe extends React.Component {
   }
 
   subscribeUser = () => {
-    console.log("subscribeUser");
 
     let isEmailValid = isValidEmail(this.state.email);
     if (!isEmailValid) {
@@ -70,7 +76,7 @@ class Subscribe extends React.Component {
       return;
     }
 
-    if (this.state.country === '' || this.state.stateCitySelected === '') {
+    if (this.state.country === '' || this.state.stateSelected === '' || this.state.citySelected === '') {
       this.setState({
         error: "Please select a country, state, and city."
       });
@@ -93,22 +99,10 @@ class Subscribe extends React.Component {
       }
     }
 
-    console.log("Email: " + this.state.email);
-    console.log("Country: " + this.state.country);
-    // console.log("State: " + this.state.stateCitySelected);
-    console.log("Birthday: " + this.state.bdayMonth + "/" + this.state.bdayDay + "/" + this.state.bdayYear);
-
-    let stateCityToSplit = this.state.stateCitySelected.split("/");
-    let stateToAPI = stateCityToSplit[0];
-    let cityToAPI = stateCityToSplit[1];
-
-    console.log("State: " + stateToAPI);
-    console.log("City: " + cityToAPI);
-
     this.setState({
       error: '',
     }, () => {
-      axios.get('https://5l1k0zjn2m.execute-api.ap-south-1.amazonaws.com/test/subscribe?email='+ this.state.email  + '&birthdayDay=' + this.state.bdayDay + '&birthdayMonth=' + this.state.bdayMonth + '&birthdayYear=' + this.state.bdayYear  + '&city=' + cityToAPI  + '&country=' + this.state.country  + '&state=' + stateToAPI)
+      axios.get('https://5l1k0zjn2m.execute-api.ap-south-1.amazonaws.com/test/subscribe?email='+ this.state.email  + '&birthdayDay=' + this.state.bdayDay + '&birthdayMonth=' + this.state.bdayMonth + '&birthdayYear=' + this.state.bdayYear  + '&city=' + this.state.citySelected  + '&country=' + this.state.country  + '&state=' + this.state.stateSelected)
       .then(response => {
         console.log('Response: ', response);
         if (response.status == 200) {
@@ -128,8 +122,8 @@ class Subscribe extends React.Component {
 
   render() {
     let months = moment.months();
-    
-    // let countryStateList = getCountryStateList(countries, states, cities);
+
+    console.log(cities);
 
     return (
       <div id="subscribe" className="subscribe" ref={this.props.refSection}>
@@ -149,6 +143,7 @@ class Subscribe extends React.Component {
         </div>
 
         <div className={this.state.loadingSub ? "container-fluid d-none" : "container-fluid"}>
+          
           <div className="row">
             <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4">
               <h3>
@@ -169,13 +164,10 @@ class Subscribe extends React.Component {
 
           <div className="row">
 
-              <div className="col-md-2 col-lg-2 col-12 offset-md-4 offset-lg-4 mt-4">
+              <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4 mt-4">
                 <h5>Country</h5>
-                <select
-                  name="country"
-                  id="country"
-                  onChange={this.setCountry}
-                >
+                <input type="text" list="count" name="country" id="country" onChange={this.setCountry} placeholder="Select Country" autoComplete="off" />
+                <datalist id="count" autoComplete="off">
                   <option value="" selected disabled>
                     Select Country
                   </option>
@@ -184,20 +176,38 @@ class Subscribe extends React.Component {
                       {country.name}
                     </option>
                   ))}
+                </datalist>
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="col-md-2 col-lg-2 col-12 offset-md-4 offset-lg-4 mt-4">
+                <h5>
+                  State
+                </h5>
+                <select name="stateSelected" id="country" onChange={this.changeState}>
+                  <option value="" selected disabled>
+                    Select State
+                  </option>
+                  {
+                    this.state.countryStates.map((stateCity) => (
+                      <option key={stateCity.isoCode} value={stateCity.name}>{stateCity.name}</option>
+                    ))  
+                  }
                 </select>
               </div>
 
-              <div className="col-md-2 col-lg-2 col-12 mt-4">
+              <div className="col-md-2 col-lg-2 col-12  mt-4">
                 <h5>
-                  State <span className="montserrat">/</span> City
+                  City
                 </h5>
-                <select name="stateCitySelected" id="country" onChange={this.onChange}>
+                <select name="citySelected" id="city" onChange={this.onChange}>
                   <option value="" selected disabled>
-                    Select State/City
+                    Select City
                   </option>
                   {
-                    this.state.stateCity.map((stateCity, index) => (
-                      <option key={index} value={stateCity.value}>{stateCity.value}</option>
+                    this.state.stateCities.map((city) => (
+                      <option key={city.name} value={city.name}>{city.name}</option>
                     ))  
                   }
                 </select>
