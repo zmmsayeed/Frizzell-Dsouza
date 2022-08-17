@@ -11,7 +11,7 @@ function About({refSection}) {
             <div className="col-12 col-md-6 col-lg-6 pr-md-5 pr-lg-5 order-md-1 order-lg-1 order-2">
               <p>
                 Frizzell D’Souza is a singer<span className='montserrat'>-</span>songwriter based out of
-                Bangalore, based out of Bangalore, who started out with her own renditions of songs on YouTube in 
+                Bangalore, who started out with her own renditions of songs on YouTube in 
                 2018 and got into songwriting during the 2020 pandemic. 
               </p>
 
@@ -25,7 +25,7 @@ function About({refSection}) {
                 and is also influenced by her love for retro classics and indie music.
               </p>
               <p>
-                As she comes to the end of her course in bachelor's in Architecture, Frizzell is also currently 
+                As she comes to the end of her course in bachelor<span className='montserrat'>'</span>s in Architecture, Frizzell is also currently 
                 working on releasing her debut EP.
               </p>
 
