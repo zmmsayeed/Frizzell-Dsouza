@@ -17,14 +17,14 @@ function MainSection({refSection}) {
                 <div className="container">
                     <div className="row">
                         <div className="col-12 col-md-6 col-lg-6  main-section-content">
-                            <h1 className='mb-4 font-weight-bold'>Singer<span className='montserrat'>-</span>Songwriter</h1>
-                            <h4 className='tagline'>
+                            <h1 className='mb-4 font-weight-bold  animate__animated animate__lightSpeedInRight'>Singer<span className='montserrat'>-</span>Songwriter</h1>
+                            <h4 className='tagline animate__animated animate__lightSpeedInLeft'>
                             <span className='montserrat'>"</span>I do music for the love of it, and that<span className='montserrat'>'</span>s about it.<span className='montserrat'>"</span>
                             </h4>
 
 
-                            <div className="social-media-wrapper mt-5">
-                                <a href="https://www.instagram.com/frizzell.dsouza" target="_blank" rel="noopener noreferrer" className='social-box'>
+                            <div className="social-media-wrapper mt-5 animate__animated animate__lightSpeedInRight">
+                                <a href="https://www.instagram.com/frizzell.dsouza" target="_blank" rel="noopener noreferrer" className='social-box '>
                                     <FaInstagram size={30} />
                                 </a>
                                 <a href="https://www.youtube.com/channel/UCpDjYVQS411CBBw0thoB0Sw" target="_blank" rel="noopener noreferrer" className='social-box'>
@@ -38,7 +38,7 @@ function MainSection({refSection}) {
                                 </a>
                             </div>
 
-                            <div className='subscribe-form mt-lg-5 mt-md-5  mt-3'>
+                            <div className='subscribe-form mt-lg-5 mt-md-5  mt-3 animate__animated  animate__rotateInUpLeft'>
                                 
                                 {/* <a href="https://originaldog.in/profile/view/ETPzFKnvzHMHkEDSnTt9ynTUio63" target="_blank" rel="noreferrer">
                                     <button className='btn btn-primary btn-main-page mt-5'>Fund</button>
