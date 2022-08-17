@@ -1,3 +1,4 @@
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 // importing stylesheet
 import "./style.css";
 
@@ -68,7 +69,9 @@ function Music({ refSection }) {
   return (
     <div id="music" ref={refSection}>
       <div className="container py-5">
-        <h1 className="offset-md-1 offset-lg-1">Music</h1>
+        <AnimationOnScroll animateIn="animate__bounceIn">
+          <h1 className="offset-md-1 offset-lg-1">Music</h1>
+        </AnimationOnScroll>
 
         <div className="row">
           {musicArr.map((music, index) => {
@@ -84,7 +87,9 @@ function Music({ refSection }) {
             }
 
             return (
+              
               <div key={index} className={musicDivClass} >
+                <AnimationOnScroll animateIn="animate__bounceIn">
                 <a href={music.general} target="_blank">
                   <div className="card">
                     <div className="dropdown">
@@ -100,6 +105,7 @@ function Music({ refSection }) {
                     </div>
                   </div>
                 </a>
+                </AnimationOnScroll>
               </div>
             );
           })}

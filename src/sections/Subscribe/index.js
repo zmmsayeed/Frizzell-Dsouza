@@ -2,6 +2,9 @@ import React from "react";
 import axios from "axios";
 import moment from "moment";
 import { Country, State, City } from "country-state-city";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+
+//importing stylesheet
 import "./style.css";
 
 let countries = Country.getAllCountries();
@@ -131,6 +134,7 @@ class Subscribe extends React.Component {
         <div className={this.state.loadingSub ? "container-fluid" : "container-fluid d-none"}>
           <div className="row">
             <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4">
+
               <h3 className={this.state.error === '' ? "d-block text-center mb-4" : "d-none"}>
                 Thank you for joining my community<span className="montserrat">!</span>
               </h3>
@@ -146,25 +150,32 @@ class Subscribe extends React.Component {
           
           <div className="row">
             <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4">
-              <h3>
-                Subscribe and Follow To Get Updates From Frizzell D
-                <span className="montserrat">'</span>Souza
-              </h3>
+              <AnimationOnScroll animateIn="animate__bounceIn">
+                <h3>
+                  Subscribe and Follow To Get Updates From Frizzell D
+                  <span className="montserrat">'</span>Souza
+                </h3>
+              </AnimationOnScroll>
             </div>
           </div>
 
           <div className="row">
             <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4 mt-4">
+            <AnimationOnScroll animateIn="animate__bounceIn">
               <h5>Email Address</h5>
+              </AnimationOnScroll>
             </div>
             <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4 mt-2">
+            <AnimationOnScroll animateIn="animate__bounceIn">
                 <input type="email" name="email" value={this.state.email} onChange={this.onChange} placeholder="Enter Your Email Address" />
+                </AnimationOnScroll>
             </div>
           </div>
 
           <div className="row">
 
               <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4 mt-4">
+              <AnimationOnScroll animateIn="animate__bounceIn">
                 <h5>Country</h5>
                 <input type="text" list="count" name="country" id="country" onChange={this.setCountry} placeholder="Select Country" autoComplete="off" />
                 <datalist id="count" autoComplete="off">
@@ -177,11 +188,13 @@ class Subscribe extends React.Component {
                     </option>
                   ))}
                 </datalist>
+                </AnimationOnScroll>
               </div>
             </div>
 
             <div className="row">
               <div className="col-md-2 col-lg-2 col-12 offset-md-4 offset-lg-4 mt-4">
+              <AnimationOnScroll animateIn="animate__bounceIn">
                 <h5>
                   State
                 </h5>
@@ -195,49 +208,60 @@ class Subscribe extends React.Component {
                     ))  
                   }
                 </select>
+                </AnimationOnScroll>
               </div>
 
               <div className="col-md-2 col-lg-2 col-12  mt-4">
-                <h5>
-                  City
-                </h5>
-                <select name="citySelected" id="city" onChange={this.onChange}>
-                  <option value="" selected disabled>
-                    Select City
-                  </option>
-                  {
-                    this.state.stateCities.map((city) => (
-                      <option key={city.name} value={city.name}>{city.name}</option>
-                    ))  
-                  }
-                </select>
+                <AnimationOnScroll animateIn="animate__bounceIn">
+                  <h5>
+                    City
+                  </h5>
+                  <select name="citySelected" id="city" onChange={this.onChange}>
+                    <option value="" selected disabled>
+                      Select City
+                    </option>
+                    {
+                      this.state.stateCities.map((city) => (
+                        <option key={city.name} value={city.name}>{city.name}</option>
+                      ))  
+                    }
+                  </select>
+                </AnimationOnScroll>
               </div>
             </div>
             
             <div className="row">
 
               <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4 mt-4">
-                <h5>Birthday</h5>
+                <AnimationOnScroll animateIn="animate__bounceIn">
+                  <h5>Birthday</h5>
+                </AnimationOnScroll>
               </div>
               <div className="col-4"></div>
 
               <div className="col-md-2 col-lg-2 col-12 offset-md-4 offset-lg-4 mt-2">
-                <select name="bdayMonth" id="month"  onChange={this.onChange}>
-                  <option value="" selected disabled>
-                    Month
-                  </option>
-                  {months.map((month, index) => (
-                    <option key={index} value={index+1}>
-                      {month}
+                <AnimationOnScroll animateIn="animate__bounceIn">
+                  <select name="bdayMonth" id="month"  onChange={this.onChange}>
+                    <option value="" selected disabled>
+                      Month
                     </option>
-                  ))}
-                </select>
+                    {months.map((month, index) => (
+                      <option key={index} value={index+1}>
+                        {month}
+                      </option>
+                    ))}
+                  </select>
+                </AnimationOnScroll>
               </div>
               <div className="col-md-1 col-lg-1 col-12 mt-2">
-                <input name="bdayYear" value={this.state.bdayYear} type="number" placeholder="Year" onChange={this.onChange} />
+                <AnimationOnScroll animateIn="animate__bounceIn">
+                  <input name="bdayYear" value={this.state.bdayYear} type="number" placeholder="Year" onChange={this.onChange} />
+                </AnimationOnScroll>
               </div>
               <div className="col-md-1 col-lg-1 col-12 mt-2">
-                <input name="bdayDay" value={this.state.bdayDay} type="number" placeholder="Day" onChange={this.onChange} />
+                <AnimationOnScroll animateIn="animate__bounceIn">
+                  <input name="bdayDay" value={this.state.bdayDay} type="number" placeholder="Day" onChange={this.onChange} />
+                </AnimationOnScroll>
               </div>
             </div>
 
@@ -256,7 +280,9 @@ class Subscribe extends React.Component {
 
             <div className="row">
               <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4 mt-5">
-                <button className="btn btn-primary btn-block" onClick={this.subscribeUser}>Subscribe</button>
+                <AnimationOnScroll animateIn="animate__bounceIn">
+                  <button className="btn btn-primary btn-block" onClick={this.subscribeUser}>Subscribe</button>
+                </AnimationOnScroll>
               </div>
           </div>
         </div>

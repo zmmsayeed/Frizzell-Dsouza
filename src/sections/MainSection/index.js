@@ -1,5 +1,6 @@
 import { useRef, useEffect } from 'react';
 import { FaInstagram, FaYoutube, FaTwitter, FaSpotify } from 'react-icons/fa';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import './style.css';
 
 function MainSection({refSection}) {
@@ -17,10 +18,14 @@ function MainSection({refSection}) {
                 <div className="container">
                     <div className="row">
                         <div className="col-12 col-md-6 col-lg-6  main-section-content">
-                            <h1 className='mb-4 font-weight-bold  animate__animated animate__lightSpeedInRight'>Singer<span className='montserrat'>-</span>Songwriter</h1>
-                            <h4 className='tagline animate__animated animate__lightSpeedInLeft'>
-                            <span className='montserrat'>"</span>I do music for the love of it, and that<span className='montserrat'>'</span>s about it.<span className='montserrat'>"</span>
-                            </h4>
+                            <AnimationOnScroll animateIn="animate__bounceIn">
+                                <h1 className='mb-4 font-weight-bold'>Singer<span className='montserrat'>-</span>Songwriter</h1>
+                            </AnimationOnScroll>
+                            <AnimationOnScroll animateIn="animate__bounceIn">
+                                <h4 className='tagline animate__animated animate__lightSpeedInLeft'>
+                                <span className='montserrat'>"</span>I do music for the love of it, and that<span className='montserrat'>'</span>s about it.<span className='montserrat'>"</span>
+                                </h4>
+                            </AnimationOnScroll>
 
 
                             <div className="social-media-wrapper mt-5 animate__animated animate__lightSpeedInRight">
@@ -38,7 +43,8 @@ function MainSection({refSection}) {
                                 </a>
                             </div>
 
-                            <div className='subscribe-form mt-lg-5 mt-md-5  mt-3 animate__animated  animate__rotateInUpLeft'>
+                            <AnimationOnScroll animateIn="animate__bounceIn">
+                            <div className='subscribe-form mt-lg-5 mt-md-5  mt-3'>
                                 
                                 {/* <a href="https://originaldog.in/profile/view/ETPzFKnvzHMHkEDSnTt9ynTUio63" target="_blank" rel="noreferrer">
                                     <button className='btn btn-primary btn-main-page mt-5'>Fund</button>
@@ -47,6 +53,7 @@ function MainSection({refSection}) {
                                     <button className='btn btn-primary btn-main-page ml-1 mt-3 subscribe-button'>Subscribe</button>
                                 </a>
                             </div>
+                            </AnimationOnScroll>
                         </div>
                     </div>
                 </div>
