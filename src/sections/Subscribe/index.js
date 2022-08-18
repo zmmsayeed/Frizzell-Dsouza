@@ -15,6 +15,7 @@ class Subscribe extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      name: '',
       email: '',
       country: '',
       stateCity: [],
@@ -71,6 +72,12 @@ class Subscribe extends React.Component {
 
   subscribeUser = () => {
 
+    if (this.state.name === '') {
+      this.setState({
+        error: 'Please enter your full name.'
+      });
+    }
+
     let isEmailValid = isValidEmail(this.state.email);
     if (!isEmailValid) {
       this.setState({
@@ -105,7 +112,7 @@ class Subscribe extends React.Component {
     this.setState({
       error: '',
     }, () => {
-      axios.get('https://5l1k0zjn2m.execute-api.ap-south-1.amazonaws.com/test/subscribe?email='+ this.state.email  + '&birthdayDay=' + this.state.bdayDay + '&birthdayMonth=' + this.state.bdayMonth + '&birthdayYear=' + this.state.bdayYear  + '&city=' + this.state.citySelected  + '&country=' + this.state.country  + '&state=' + this.state.stateSelected)
+      axios.get('https://5l1k0zjn2m.execute-api.ap-south-1.amazonaws.com/test/subscribe?email='+ this.state.email  + '&birthdayDay=' + this.state.bdayDay + '&birthdayMonth=' + this.state.bdayMonth + '&birthdayYear=' + this.state.bdayYear  + '&city=' + this.state.citySelected  + '&country=' + this.state.country  + '&state=' + this.state.stateSelected + '&name=' + this.state.name)
       .then(response => {
         console.log('Response: ', response);
         if (response.status == 200) {
@@ -160,15 +167,18 @@ class Subscribe extends React.Component {
           </div>
 
           <div className="row">
-            <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4 mt-4">
-            <AnimationOnScroll animateIn="animate__bounceIn">
-              <h5>Email Address</h5>
+            <div className="col-md-2 col-lg-2 col-12 offset-md-4 offset-lg-4 mt-4">
+              <AnimationOnScroll animateIn="animate__bounceIn">
+                <h5>Name</h5>
+                <input type="text" name="name" value={this.state.name} onChange={this.onChange} placeholder="Enter Your Full Name" />
               </AnimationOnScroll>
+              
             </div>
-            <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4 mt-2">
-            <AnimationOnScroll animateIn="animate__bounceIn">
+            <div className="col-md-2 col-lg-2 col-12  mt-4">
+              <AnimationOnScroll animateIn="animate__bounceIn">
+                <h5>Email Address</h5>
                 <input type="email" name="email" value={this.state.email} onChange={this.onChange} placeholder="Enter Your Email Address" />
-                </AnimationOnScroll>
+              </AnimationOnScroll>
             </div>
           </div>
 
