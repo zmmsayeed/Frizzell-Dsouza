@@ -11,7 +11,7 @@ class Gallery extends React.Component {
   }
 
   showImage = (url) => {
-    console.log("Called show img")
+    // console.log("Called show img")
     this.setState({
       showImg: true,
       imgUrl: url,
@@ -35,22 +35,22 @@ class Gallery extends React.Component {
 
           <div className="row galleryimages">
             <div className="col-6 col-lg-4 col-md-4 mb-3 img-holder"  onClick={() => this.showImage("/images/Gallery/1.jpg")}>
-              <img src="/images/Gallery/1.jpg" className="img-fluid"  />
+              <img src="/images/Gallery/1.jpg" className="img-fluid" alt="sing1"  />
             </div>
             <div className="col-6 col-md-4 mb-3 img-holder"  onClick={() => this.showImage("/images/Gallery/2.jpg")}>
-              <img src="/images/Gallery/2.jpg" className="img-fluid" />
+              <img src="/images/Gallery/2.jpg" className="img-fluid" alt="sing2" />
             </div>
             <div className="col-6 col-md-4 mb-3 img-holder"  onClick={() => this.showImage("/images/Gallery/3.jpg")}>
-              <img src="/images/Gallery/3.jpg" className="img-fluid" />
+              <img src="/images/Gallery/3.jpg" className="img-fluid" alt="sing3" />
             </div>
             <div className="col-6 col-md-4 mb-3 img-holder"  onClick={() => this.showImage("/images/Gallery/4.jpg")}>
-              <img src="/images/Gallery/4.jpg" className="img-fluid" />
+              <img src="/images/Gallery/4.jpg" className="img-fluid" alt="sing4" />
             </div>
             <div className="col-6 col-md-4 mb-3 img-holder"  onClick={() => this.showImage("/images/Gallery/6_1.jpg")}>
-              <img src="/images/Gallery/6_1.jpg" className="img-fluid" />
+              <img src="/images/Gallery/6_1.jpg" className="img-fluid" alt="sing5" />
             </div>
             <div className="col-6 col-md-4 mb-3 img-holder"  onClick={() => this.showImage("/images/Gallery/5_1.jpg")}>
-              <img src="/images/Gallery/5_1.jpg" className="img-fluid" />
+              <img src="/images/Gallery/5_1.jpg" className="img-fluid" alt="sing6" />
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@ class Gallery extends React.Component {
         {/* <div className={this.state.showImg ? "d-block" : "d-none"}> */}
         <div className={this.state.showImg ? "modal" : "d-none"}>
           <span className="close" onClick={this.closeModal}>&times;</span>
-          <img className="modal-content" src={this.state.imgUrl} />
+          <img className="modal-content" src={this.state.imgUrl} alt="galleryImage" />
         </div>
       </div>
     );

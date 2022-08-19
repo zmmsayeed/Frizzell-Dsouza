@@ -18,10 +18,10 @@ function MainSection({refSection}) {
                 <div className="container">
                     <div className="row">
                         <div className="col-12 col-md-6 col-lg-6  main-section-content">
-                            <AnimationOnScroll animateIn="animate__bounceIn">
+                            <AnimationOnScroll animateIn="animate__fadeIn">
                                 <h1 className='mb-4 font-weight-bold'>Singer<span className='montserrat'>-</span>Songwriter</h1>
                             </AnimationOnScroll>
-                            <AnimationOnScroll animateIn="animate__bounceIn">
+                            <AnimationOnScroll animateIn="animate__fadeIn">
                                 <h4 className='tagline animate__animated animate__lightSpeedInLeft'>
                                 <span className='montserrat'>"</span>I do music for the love of it, and that<span className='montserrat'>'</span>s about it.<span className='montserrat'>"</span>
                                 </h4>
@@ -43,7 +43,7 @@ function MainSection({refSection}) {
                                 </a>
                             </div>
 
-                            <AnimationOnScroll animateIn="animate__bounceIn">
+                            <AnimationOnScroll animateIn="animate__fadeIn">
                             <div className='subscribe-form mt-lg-5 mt-md-5  mt-3'>
                                 
                                 {/* <a href="https://originaldog.in/profile/view/ETPzFKnvzHMHkEDSnTt9ynTUio63" target="_blank" rel="noreferrer">

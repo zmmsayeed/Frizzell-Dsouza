@@ -5,13 +5,13 @@ function Watch({refSection}) {
   return (
     <div id="watch" ref={refSection}>
         <div className='container'>
-          <AnimationOnScroll animateIn="animate__bounceIn">
+          <AnimationOnScroll animateIn="animate__fadeIn">
             <h2 className="mb-5">Music Videos</h2>
           </AnimationOnScroll>
 
             <div className="row">
                 <div className="col-12 col-md-6 col-lg-6">
-                  <AnimationOnScroll animateIn="animate__bounceIn">
+                  <AnimationOnScroll animateIn="animate__fadeIn">
                     <iframe width="100%" height="340" src="https://www.youtube.com/embed/PsKpTftgbOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     <p>Foolish Once Again</p>
                   </AnimationOnScroll>
@@ -19,25 +19,25 @@ function Watch({refSection}) {
                 <div className="col-12 col-md-6 col-lg-6">
                     <div className="row">
                         <div className="col-12 col-md-6 col-lg-6">
-                          <AnimationOnScroll animateIn="animate__bounceIn">
+                          <AnimationOnScroll animateIn="animate__fadeIn">
                             <iframe width="100%" height="150" src="https://www.youtube.com/embed/ew8g3piv5M4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             <p>Drown Away</p>
                           </AnimationOnScroll>
                         </div>
                         <div className="col-12 col-md-6 col-lg-6">
-                          <AnimationOnScroll animateIn="animate__bounceIn">
+                          <AnimationOnScroll animateIn="animate__fadeIn">
                             <img src="/images/music/fall.jpg" alt="Fall" width="100%" height="150" />
                             <p>Fall</p>
                           </AnimationOnScroll>
                         </div>
                         <div className="col-12 col-md-6 col-lg-6">
-                          <AnimationOnScroll animateIn="animate__bounceIn">
+                          <AnimationOnScroll animateIn="animate__fadeIn">
                             <iframe width="100%" height="150" src="https://www.youtube.com/embed/i7bWmnJaSE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             <p>New</p>
                           </AnimationOnScroll>
                         </div>
                         <div className="col-12 col-md-6 col-lg-6 d-lg-block d-md-block d-none">
-                            <AnimationOnScroll animateIn="animate__bounceIn">
+                            <AnimationOnScroll animateIn="animate__fadeIn">
                               <img src="/images/music/comingsoon.jpg" alt="Fall" width="100%" height="150" />
                               <p>Coming Soon</p>
                             </AnimationOnScroll>

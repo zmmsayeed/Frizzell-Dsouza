@@ -25,3 +25,4 @@ yarn-error.log*
 
 credentials.csv
 settings.json
+txt-dns-records.csv

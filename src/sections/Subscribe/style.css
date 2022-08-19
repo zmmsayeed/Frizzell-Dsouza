@@ -30,16 +30,17 @@
 #subscribe select {
     width: 100%;
     background-color: transparent;
-    border: 1px solid #808275;
+    border: 1px solid #808275 !important;
     padding: 8px 15px;
     border-radius: 20px;
     font-size: 0.8rem;
+    color: #e8e29a;
 }
 
 #subscribe input::placeholder,
 #subscribe select::placeholder {
     font-size: 0.8rem;
-    color: #e8e29a;
+    color: #e8e29a !important;
 }
 
 #subscribe option {

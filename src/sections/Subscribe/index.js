@@ -114,8 +114,8 @@ class Subscribe extends React.Component {
     }, () => {
       axios.get('https://5l1k0zjn2m.execute-api.ap-south-1.amazonaws.com/test/subscribe?email='+ this.state.email  + '&birthdayDay=' + this.state.bdayDay + '&birthdayMonth=' + this.state.bdayMonth + '&birthdayYear=' + this.state.bdayYear  + '&city=' + this.state.citySelected  + '&country=' + this.state.country  + '&state=' + this.state.stateSelected + '&name=' + this.state.name)
       .then(response => {
-        console.log('Response: ', response);
-        if (response.status == 200) {
+        // console.log('Response: ', response);
+        if (response.status === 200) {
           this.setState({
             loadingSub: true,
           });
@@ -133,7 +133,7 @@ class Subscribe extends React.Component {
   render() {
     let months = moment.months();
 
-    console.log(cities);
+    // console.log(cities);
 
     return (
       <div id="subscribe" className="subscribe" ref={this.props.refSection}>
@@ -157,7 +157,7 @@ class Subscribe extends React.Component {
           
           <div className="row">
             <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4">
-              <AnimationOnScroll animateIn="animate__bounceIn">
+              <AnimationOnScroll animateIn="animate__fadeIn">
                 <h3>
                   Subscribe and Follow To Get Updates From Frizzell D
                   <span className="montserrat">'</span>Souza
@@ -168,14 +168,14 @@ class Subscribe extends React.Component {
 
           <div className="row">
             <div className="col-md-2 col-lg-2 col-12 offset-md-4 offset-lg-4 mt-4">
-              <AnimationOnScroll animateIn="animate__bounceIn">
+              <AnimationOnScroll animateIn="animate__fadeIn">
                 <h5>Name</h5>
                 <input type="text" name="name" value={this.state.name} onChange={this.onChange} placeholder="Enter Your Full Name" />
               </AnimationOnScroll>
               
             </div>
             <div className="col-md-2 col-lg-2 col-12  mt-4">
-              <AnimationOnScroll animateIn="animate__bounceIn">
+              <AnimationOnScroll animateIn="animate__fadeIn">
                 <h5>Email Address</h5>
                 <input type="email" name="email" value={this.state.email} onChange={this.onChange} placeholder="Enter Your Email Address" />
               </AnimationOnScroll>
@@ -185,7 +185,7 @@ class Subscribe extends React.Component {
           <div className="row">
 
               <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4 mt-4">
-              <AnimationOnScroll animateIn="animate__bounceIn">
+              <AnimationOnScroll animateIn="animate__fadeIn">
                 <h5>Country</h5>
                 <input type="text" list="count" name="country" id="country" onChange={this.setCountry} placeholder="Select Country" autoComplete="off" />
                 <datalist id="count" autoComplete="off">
@@ -204,7 +204,7 @@ class Subscribe extends React.Component {
 
             <div className="row">
               <div className="col-md-2 col-lg-2 col-12 offset-md-4 offset-lg-4 mt-4">
-              <AnimationOnScroll animateIn="animate__bounceIn">
+              <AnimationOnScroll animateIn="animate__fadeIn">
                 <h5>
                   State
                 </h5>
@@ -222,7 +222,7 @@ class Subscribe extends React.Component {
               </div>
 
               <div className="col-md-2 col-lg-2 col-12  mt-4">
-                <AnimationOnScroll animateIn="animate__bounceIn">
+                <AnimationOnScroll animateIn="animate__fadeIn">
                   <h5>
                     City
                   </h5>
@@ -243,14 +243,14 @@ class Subscribe extends React.Component {
             <div className="row">
 
               <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4 mt-4">
-                <AnimationOnScroll animateIn="animate__bounceIn">
+                <AnimationOnScroll animateIn="animate__fadeIn">
                   <h5>Birthday</h5>
                 </AnimationOnScroll>
               </div>
               <div className="col-4"></div>
 
               <div className="col-md-2 col-lg-2 col-12 offset-md-4 offset-lg-4 mt-2">
-                <AnimationOnScroll animateIn="animate__bounceIn">
+                <AnimationOnScroll animateIn="animate__fadeIn">
                   <select name="bdayMonth" id="month"  onChange={this.onChange}>
                     <option value="" selected disabled>
                       Month
@@ -264,12 +264,12 @@ class Subscribe extends React.Component {
                 </AnimationOnScroll>
               </div>
               <div className="col-md-1 col-lg-1 col-12 mt-2">
-                <AnimationOnScroll animateIn="animate__bounceIn">
+                <AnimationOnScroll animateIn="animate__fadeIn">
                   <input name="bdayYear" value={this.state.bdayYear} type="number" placeholder="Year" onChange={this.onChange} />
                 </AnimationOnScroll>
               </div>
               <div className="col-md-1 col-lg-1 col-12 mt-2">
-                <AnimationOnScroll animateIn="animate__bounceIn">
+                <AnimationOnScroll animateIn="animate__fadeIn">
                   <input name="bdayDay" value={this.state.bdayDay} type="number" placeholder="Day" onChange={this.onChange} />
                 </AnimationOnScroll>
               </div>
@@ -290,7 +290,7 @@ class Subscribe extends React.Component {
 
             <div className="row">
               <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4 mt-5">
-                <AnimationOnScroll animateIn="animate__bounceIn">
+                <AnimationOnScroll animateIn="animate__fadeIn">
                   <button className="btn btn-primary btn-block" onClick={this.subscribeUser}>Subscribe</button>
                 </AnimationOnScroll>
               </div>

@@ -1,6 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'antd/dist/antd.css';
-import 'animate.css';
+import 'animate.css/animate.min.css';
 import './App.css';
 
 // importing pages

@@ -7,7 +7,7 @@ function Music({ refSection }) {
     {
       name: "New",
       sub: "Single",
-      image: "/images/music/New.jpg",
+      image: "/images/music/New_1.jpg",
       general: "https://fanlink.to/frizzelldsouzanew",
       yt: "google.com",
       spotify: "google.com",
@@ -17,7 +17,7 @@ function Music({ refSection }) {
     {
       name: "Drown Away",
       sub: "Single",
-      image: "/images/music/Drown Away.jpg",
+      image: "/images/music/Drown.jpg",
       general: "https://streamlink.to/Drown_Away",
       yt: "google.com",
       spotify: "google.com",
@@ -27,7 +27,7 @@ function Music({ refSection }) {
     {
       name: "Foolish Once Again",
       sub: "Single",
-      image: "/images/music/FoolishOnceAgain.jpg",
+      image: "/images/music/Foolish.jpg",
       general: "https://streamlink.to/FoolishOnceAgain",
       yt: "google.com",
       spotify: "google.com",
@@ -37,7 +37,7 @@ function Music({ refSection }) {
     {
       name: "Fall",
       sub: "Single",
-      image: "/images/music/Fall_New.jpg",
+      image: "/images/music/Fall.jpg",
       general: "https://audius.co/frizzelldsouza",
       yt: "google.com",
       spotify: "google.com",
@@ -47,7 +47,7 @@ function Music({ refSection }) {
     {
       name: "Ill At Ease",
       sub: "Featured",
-      image: "/images/music/ill.png",
+      image: "/images/music/ill_new.png",
       general: "https://linktr.ee/illatease",
       yt: "google.com",
       spotify: "google.com",
@@ -57,7 +57,7 @@ function Music({ refSection }) {
     {
       name: "Jaded",
       sub: "Featured",
-      image: "/images/music/jaded.jpg",
+      image: "/images/music/jaded_new.jpg",
       general: "https://fanlink.to/FdJaded",
       yt: "google.com",
       spotify: "google.com",
@@ -69,7 +69,7 @@ function Music({ refSection }) {
   return (
     <div id="music" ref={refSection}>
       <div className="container py-5">
-        <AnimationOnScroll animateIn="animate__bounceIn">
+        <AnimationOnScroll animateIn="animate__fadeIn">
           <h1 className="offset-md-1 offset-lg-1">Music</h1>
         </AnimationOnScroll>
 
@@ -89,8 +89,8 @@ function Music({ refSection }) {
             return (
               
               <div key={index} className={musicDivClass} >
-                <AnimationOnScroll animateIn="animate__bounceIn">
-                <a href={music.general} target="_blank">
+                <AnimationOnScroll animateIn="animate__fadeIn">
+                <a href={music.general} target="_blank" rel="noreferrer">
                   <div className="card">
                     <div className="dropdown">
                       <div className="dropbtn">
