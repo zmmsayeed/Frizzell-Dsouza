@@ -34,16 +34,23 @@
 }
 
 #contact p {
-    font-family: 'the_seasonslight';
+    font-family: 'the_seasonsregular';
     font-weight: bold;
     font-size: 1.2rem;
     letter-spacing: 1.5px;
 }
 
+#contact h4 {
+    font-family: 'the_seasonslight';
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #735440;
+}
+
 @media only screen and (max-width: 600px) {
     #contact p {
         text-align: center;
-        font-family: 'the_seasonslight';
+        font-family: 'the_seasonsregular';
         font-weight: bold;
         font-size: 1rem;
         letter-spacing: 1.5px;

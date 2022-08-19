@@ -33,15 +33,17 @@ function Contact({ refSection }) {
             </div>
             <div className="col-12 col-md-6 col-lg-6 d-flex justify-content-center flex-column">
               <p>
-                <MdEmail  className='mr-2'/>
-                theurbanweaverproject<span className="montserrat">@</span>gmail.com
+                {/* <MdEmail  className='mr-2'/> */}
+                {/* theurbanweaverproject<span className="montserrat">@</span>gmail.com */}
+                For Bookings and Queries:
               </p>
-              <p>
-                <FaPhoneSquareAlt className='mr-2'/>
-                <span className="montserrat">+</span>91 99<span className="montserrat">4</span>59 93522
-              </p>
+              <h4>
+                {/* <FaPhoneSquareAlt className='mr-2'/> */}
+                {/* <span className="montserrat">+</span>91 99<span className="montserrat">4</span>59 93522 */}
+                reach<span className="montserrat">@</span>frizzelldsouza.in
+              </h4>
 
-              <p className='mt-5'>
+              <p className='mt-4'>
                 <div className="social-media-wrapper">
                   <a href="https://www.instagram.com/frizzell.dsouza" target="_blank" rel="noopener noreferrer" className='social-box'>
                       <FaInstagram size={30} />
