@@ -37,7 +37,7 @@ function Music({ refSection }) {
     {
       name: "Fall",
       sub: "Single",
-      image: "/images/music/Fall.jpg",
+      image: "/images/music/fall.jpg",
       general: "https://audius.co/frizzelldsouza",
       yt: "google.com",
       spotify: "google.com",
