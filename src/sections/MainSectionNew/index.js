@@ -52,7 +52,7 @@ function MainSectionNew({refSection}) {
                             </AnimationOnScroll>
                         </div>
 
-                        <div className='col-12 col-md-5 col-lg-5 offset-md-1 offset-lg-1 main-section-content align-items-center' id='latest-release'>
+                        <div className='col-12 col-md-4 col-lg-4 offset-md-1 offset-lg-1 main-section-content align-items-center' id='latest-release'>
                             <h4 className='outnow-heading'>OUT NOW</h4>
                             <img src="/images/music/hillsSquare.jpg" alt="hills" className='img-fluid mt-4' />
                             <h2 className='ltr-title mt-5'>The Hills Know Of You</h2>
