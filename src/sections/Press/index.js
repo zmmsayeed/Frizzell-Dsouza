@@ -61,12 +61,12 @@ function Press({refSection}) {
                         </div>
                         <div className="col-12 col-md-3 col-lg-3 bg-dark press-read-section">
                             <div className='press-read mb-4'>
-                                <img src='/images/press/thehindu.png' className='img-fluid mb-3' width={'100px'} />
-                                <h5>Mangaluru singer Frizzell D’Souza’s latest single ‘Foolish Once Again’, a love ballad</h5>
+                                <img src='/images/press/hummingheart.png' className='img-fluid mb-3' width={'150px'} />
+                                <h5>Frizzell D’Souza – Just As Easily</h5>
 
-                                <p>Frizzell D’Souza straddles the worlds of architecture and music. She has been studying the former for the last four years and practising the latter since she was in third grade. She finds a similarity between the two. “It is the process,” she says, “When we work on a design in architecture, we start with a concept. We do a lot of redos and keep going back and forth with it until we get it right. That is a parallel I find in music.”</p>
+                                <p>Bangalore-based singer-songwriter Frizzell D’Souza has been releasing singles for about two years now and her latest release, and second one this year, is a piece of breezy beauty. Insistent and yearning in all the right proportions, it would be unsurprising if D’Souza deemed ‘Just As Easily’ to be most representative of her oeuvre.</p>
 
-                                <p>Frizzell’s third single, ‘Foolish Once Again’, has over 22,000 views on YouTube and close to 45,000 streams on Spotify. Though the flowing love ballad was written in a day, the “composition-centric” song, took about two months to produce.</p>
+                                <p>The best of love songs fail to work without candour, and ‘Just As Easily’ is astutely aware of this datum. “I’m naive, and I’m silly” is quite aptly the refrain of a song that has, with notable adeptness, mastered the art of rhythmic longing...</p>
                             </div>
 
                             <div className='press-read'>

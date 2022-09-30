@@ -1,0 +1,56 @@
+#music {
+    min-height: 100vh;
+    padding: 5% 0;
+    /* background: linear-gradient(-45deg, #fed5db, #e5d8f3, #b0d8e7, #e7dda1); */
+    background-color: #F5F1EF;
+}
+
+.leftMusicFocus, 
+.rightMusicFocus {
+    background: #DBD5CE;
+    /* margin-top: 4%; */
+    border-radius:20px;
+}
+
+.focusMusicButton {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    
+    background-color: #30334B;
+    color: #E5E1C4;
+    font-family: 'the_seasonsbold' !important;
+    border-radius: 50px;
+}
+
+.focusMusicButton:hover {
+    color: #9c9c9c;
+}
+
+.eachMusic {
+    background-color: #30334B;
+    border-radius:50px;
+    color: #E5E1C4;
+    font-family: 'the_seasonsbold' !important;
+}
+
+.eachMusic:hover {
+    background-color: #F5F1EF;
+    color: #30334B;
+}
+
+.cssBox {
+    margin: 0 10px;
+    flex-basis: calc(50% - 20px);
+}
+
+.eachMusic img {
+    border-radius: 30px;
+}
+
+.rightStreamButton {
+    border-radius: 50px;
+    background-color: #E5E1C4;
+    border: 1px solid;
+    padding: 1px 10px !important;
+}

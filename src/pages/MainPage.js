@@ -5,12 +5,14 @@ import MainSection from '../sections/MainSection';
 import Music from '../sections/Music';
 import Press from '../sections/Press';
 import Subscribe from '../sections/Subscribe';
-
-import { useInView } from "react-intersection-observer";
+import MainSectionNew from '../sections/MainSectionNew';
+import MusicNew from '../sections/MusicNew';
 import Watch from '../sections/Watch';
 import Gallery from '../sections/Gallery';
 import Footer from '../components/Footer';
 import Launch from './Launch';
+
+import { useInView } from "react-intersection-observer";
 
 function MainPage() {
     const [mainSectionRef, MainSectionInView] = useInView({ threshold: 0.5 });
@@ -44,8 +46,10 @@ function MainPage() {
     return (
         <>
             <Navbar activeSection={activeSection} />
-            <MainSection refSection={mainSectionRef} />
-            <Music refSection={musicRef} />
+            {/* <MainSection refSection={mainSectionRef} /> */}
+            <MainSectionNew refSection={mainSectionRef} />
+            {/* <Music refSection={musicRef} /> */}
+            <MusicNew refSection={musicRef} />
             <Subscribe refSection={subscribeRef} />
             <About refSection={aboutRef} />
             <Watch refSection={watchRef} />

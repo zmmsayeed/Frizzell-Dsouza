@@ -162,6 +162,7 @@ class Subscribe extends React.Component {
                   Subscribe and Follow To Get Updates From Frizzell D
                   <span className="montserrat">'</span>Souza
                 </h3>
+                <small>All fields are mandatory</small>
               </AnimationOnScroll>
             </div>
           </div>
@@ -227,6 +228,7 @@ class Subscribe extends React.Component {
                     City
                   </h5>
                   <select name="citySelected" id="city" onChange={this.onChange}>
+                    <option value="N/A">N/A</option>
                     <option value="" selected disabled>
                       Select City
                     </option>
