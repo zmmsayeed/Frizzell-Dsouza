@@ -36,7 +36,7 @@ function MusicNew({ refSection }) {
       spotify: "google.com",
       apple: "google.com",
       exclusive: false,
-      year: 2020,
+      year: 2021,
     },
     {
       name: "Fall",
@@ -47,7 +47,7 @@ function MusicNew({ refSection }) {
       spotify: "google.com",
       apple: "google.com",
       exclusive: true,
-      year: 2020,
+      year: 2022,
     },
     {
       name: "Ill At Ease",
@@ -58,7 +58,7 @@ function MusicNew({ refSection }) {
       spotify: "google.com",
       apple: "google.com",
       exclusive: true,
-      year: 2020,
+      year: 2022,
     },
     {
       name: "Jaded",
@@ -81,7 +81,7 @@ function MusicNew({ refSection }) {
         </AnimationOnScroll>
 
         <div className="row">
-          <div className='col-12 col-md-5 col-lg-5 cssBox'>
+          <div className='col-12 col-md-5 w-100 col-lg-5 cssBox'>
             <div className='row leftMusicFocus p-4'>
               <div className='col-6 col-md-6 col-lg-5'>
                 <img src="/images/music/hillsSquare.jpg" alt="The Hills Know Of You" className="img-fluid" />
@@ -108,7 +108,7 @@ function MusicNew({ refSection }) {
           </div>
 
 
-          <div className='col-12 col-md-7 col-lg-7 cssBox'>
+          <div className='col-12 col-md-7 col-lg-7 w-100 cssBox'>
             <div className='row rightMusicFocus p-3'>
 
               {
@@ -124,8 +124,12 @@ function MusicNew({ refSection }) {
                         <p className='mt-2 mb-0 ml-2'>{music.name}</p>
                       </div>
 
-                      <div className="col-3 col-md-3 col-lg-3 text-center">
-                        <p className='mt-2 mb-0'>{music.year} &nbsp;&nbsp; {music.sub}</p>
+                      <div className="col-1 col-md-1 col-lg-1">
+                        <p className='mt-2 mb-0'>{music.year}</p>
+                      </div>
+
+                      <div className="col-2 col-md-2 col-lg-2 text-center">
+                        <p className='mt-2 mb-0'>{music.sub}</p>
                       </div>
 
                       <div className="col-3 col-md-3 col-lg-3 text-center">

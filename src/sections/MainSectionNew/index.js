@@ -53,7 +53,7 @@ function MainSectionNew({refSection}) {
                         </div>
 
                         <div className='col-12 col-md-4 col-lg-4 offset-md-1 offset-lg-1 main-section-content align-items-center' id='latest-release'>
-                            <h4 className='outnow-heading'>OUT NOW</h4>
+                            <h4 className='outnow-heading mt-5'>OUT NOW</h4>
                             <img src="/images/music/hillsSquare.jpg" alt="hills" className='img-fluid mt-4' />
                             <h2 className='ltr-title mt-5'>The Hills Know Of You</h2>
                             <a href='#' className='btn btn-primary btn-main-page ml-1 mt-3 subscribe-button'>Listen Here</a>
