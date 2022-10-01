@@ -12,7 +12,7 @@ function Watch({refSection}) {
             <div className="row">
                 <div className="col-12 col-md-6 col-lg-6">
                   <AnimationOnScroll animateIn="animate__fadeIn">
-                    <iframe width="100%" height="340" src="https://www.youtube.com/embed/v-L1iCnLV0M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="340" src="https://www.youtube.com/embed/v-L1iCnLV0M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen={true}></iframe>
                     <p>The Hills Know Of You</p>
                   </AnimationOnScroll>
                 </div>
@@ -20,19 +20,19 @@ function Watch({refSection}) {
                     <div className="row">
                         <div className="col-12 col-md-6 col-lg-6">
                           <AnimationOnScroll animateIn="animate__fadeIn">
-                            <iframe width="100%" height="150" src="https://www.youtube.com/embed/vJGfIy64910" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="100%" height="150" src="https://www.youtube.com/embed/vJGfIy64910" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen={true}></iframe>
                             <p>Just As Easily</p>
                           </AnimationOnScroll>
                         </div>
                         <div className="col-12 col-md-6 col-lg-6">
                           <AnimationOnScroll animateIn="animate__fadeIn">
-                            <iframe width="100%" height="150" src="https://www.youtube.com/embed/PsKpTftgbOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <iframe width="100%" height="150" src="https://www.youtube.com/embed/PsKpTftgbOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen={true}></iframe>
                             <p>Foolish Once Again</p>
                           </AnimationOnScroll>
                         </div>
                         <div className="col-12 col-md-6 col-lg-6">
                           <AnimationOnScroll animateIn="animate__fadeIn">
-                            <iframe width="100%" height="150" src="https://www.youtube.com/embed/ew8g3piv5M4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <iframe width="100%" height="150" src="https://www.youtube.com/embed/ew8g3piv5M4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen={true}></iframe>
                             <p>Drown Away</p>
                           </AnimationOnScroll>
                         </div>
@@ -44,7 +44,7 @@ function Watch({refSection}) {
                         </div> */}
                         <div className="col-12 col-md-6 col-lg-6">
                           <AnimationOnScroll animateIn="animate__fadeIn">
-                            <iframe width="100%" height="150" src="https://www.youtube.com/embed/i7bWmnJaSE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <iframe width="100%" height="150" src="https://www.youtube.com/embed/i7bWmnJaSE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen={true}></iframe>
                             <p>New</p>
                           </AnimationOnScroll>
                         </div>
@@ -79,16 +79,16 @@ function Watch({refSection}) {
 
       <div className="row">
         <div className="col-4 col-md-3 col-lg-3 offset-lg-1 offset-md-1 mt-4">
-            <iframe width="100%" height="150" src="https://www.youtube.com/embed/lgfbAIQ7r8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe width="100%" height="150" src="https://www.youtube.com/embed/lgfbAIQ7r8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen={true}></iframe>
             
         </div>
 
         <div className="col-4 col-md-4 col-lg-4 clearfix">
-            <iframe width="100%" height="200" src="https://www.youtube.com/embed/WM4hGt3bW80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/WM4hGt3bW80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen={true}></iframe>
         </div>
 
         <div className="col-4 col-md-3 col-lg-3 clearfix  mt-4">
-            <iframe width="100%" height="150" src="https://www.youtube.com/embed/Ife54T6oDZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe width="100%" height="150" src="https://www.youtube.com/embed/Ife54T6oDZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen={true}></iframe>
         </div>
       </div>
 
@@ -98,15 +98,15 @@ function Watch({refSection}) {
 
         <div className="row">
             <div className="col-4 col-md-3 col-lg-3 offset-lg-1 offset-md-1 mt-4">
-              <iframe width="100%" height="150" src="https://www.youtube.com/embed/j6t9EQ6YBJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>              
+              <iframe width="100%" height="150" src="https://www.youtube.com/embed/j6t9EQ6YBJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen={true}></iframe>              
             </div>
 
             <div className="col-4 col-md-4 col-lg-4 clearfix">
-              <iframe width="100%" height="200" src="https://www.youtube.com/embed/dUt09Vg9sNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+              <iframe width="100%" height="200" src="https://www.youtube.com/embed/dUt09Vg9sNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen={true}></iframe>
             </div>
 
             <div className="col-4 col-md-3 col-lg-3 clearfix  mt-4">
-              <iframe width="100%" height="150" src="https://www.youtube.com/embed/xyAZJw1-pHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+              <iframe width="100%" height="150" src="https://www.youtube.com/embed/xyAZJw1-pHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen={true}></iframe>
             </div>
         </div>
 

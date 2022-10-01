@@ -1,9 +1,11 @@
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { FaPlayCircle } from 'react-icons/fa';
+import { useMediaQuery } from 'react-responsive';
 // importing stylesheet
 import "./style.css";
 
 function MusicNew({ refSection }) {
+  const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
   const musicArr = [
     {
       name: "New",
@@ -81,7 +83,7 @@ function MusicNew({ refSection }) {
         </AnimationOnScroll>
 
         <div className="row">
-          <div className='col-12 col-md-5 w-100 col-lg-5 cssBox'>
+          <div className={isMobile ? "col-12 col-md-5 w-100 col-lg-5" : "col-12 col-md-5 w-100 col-lg-5 cssBox"}>
             <div className='row leftMusicFocus p-4'>
               <div className='col-6 col-md-6 col-lg-5'>
                 <img src="/images/music/hillsSquare.jpg" alt="The Hills Know Of You" className="img-fluid" />
@@ -108,15 +110,15 @@ function MusicNew({ refSection }) {
           </div>
 
 
-          <div className='col-12 col-md-7 col-lg-7 w-100 cssBox'>
+          <div className={isMobile ? "col-12 col-md-7 col-lg-7 w-100 mt-2 mt-md-0 mt-lg-0" : "col-12 col-md-7 col-lg-7 w-100  mt-2 mt-md-0 mt-lg-0 cssBox"} >
             <div className='row rightMusicFocus p-3'>
 
               {
                 musicArr.map((music, ind) => {
                   return (
-                    <div key={ind} className={ind===0 ? "row no-gutters eachMusic p-2" : "row no-gutters eachMusic p-2 mt-2"}>
+                    <div key={ind} className={ind === 0 ? "row no-gutters eachMusic p-2" : "row no-gutters eachMusic p-2 mt-2"}>
                     {/* <div className='row no-gutters eachMusic p-2' key={ind}> */}
-                      <div className="col-1 col-md-1 col-lg-1">
+                      <div className="col-2 col-md-1 col-lg-1">
                         <img src={music.image} alt={music.name} className="img-fluid" />
                       </div>
 
@@ -132,9 +134,17 @@ function MusicNew({ refSection }) {
                         <p className='mt-2 mb-0'>{music.sub}</p>
                       </div>
 
-                      <div className="col-3 col-md-3 col-lg-3 text-center">
+                      <div className="col-2 col-md-3 col-lg-3 text-center">
                         <a href={music.general} target="_blank" rel="noreferrer" className='btn rightStreamButton mt-2'>
-                          <small>Stream Here <FaPlayCircle /></small>
+                          {
+                            isMobile ? 
+                              <small>
+                                <FaPlayCircle size={35} className="mt-2 mb-2" />
+                              </small>
+                            : <small>
+                            Stream Here <FaPlayCircle />
+                          </small>
+                          }
                         </a>
                       </div>
                     </div>

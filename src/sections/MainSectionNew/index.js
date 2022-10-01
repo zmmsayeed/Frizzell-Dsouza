@@ -22,7 +22,7 @@ function MainSectionNew({refSection}) {
                             </AnimationOnScroll>
 
 
-                            <div className="social-media-wrapper mt-5">
+                            <div className="mt-5">
                                 <AnimationOnScroll animateIn="animate__fadeIn">
                                     <a href="https://www.instagram.com/frizzell.dsouza" target="_blank" rel="noopener noreferrer" className='social-box '>
                                         <FaInstagram size={30} />
@@ -52,8 +52,8 @@ function MainSectionNew({refSection}) {
                             </AnimationOnScroll>
                         </div>
 
-                        <div className='col-12 col-md-4 col-lg-4 offset-md-1 offset-lg-1 main-section-content align-items-center' id='latest-release'>
-                            <h4 className='outnow-heading mt-5'>OUT NOW</h4>
+                        <div className='col-12 col-md-4 col-lg-4 offset-md-1 offset-lg-1 main-section-content-right align-items-center' id='latest-release'>
+                            <h4 className='outnow-heading mt-5 mt-md-0 mt-lg-0'>OUT NOW</h4>
                             <img src="/images/music/hillsSquare.jpg" alt="hills" className='img-fluid mt-4' />
                             <h2 className='ltr-title mt-5'>The Hills Know Of You</h2>
                             <a href='https://streamlink.to/TheHillsKnowOfYou' target="_blank" className='btn btn-primary btn-main-page ml-1 mt-3 subscribe-button'>Listen Here</a>

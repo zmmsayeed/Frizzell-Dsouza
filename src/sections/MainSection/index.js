@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 import { FaInstagram, FaYoutube, FaTwitter, FaSpotify } from 'react-icons/fa';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import './style.css';
+// import './style.css';
 
 function MainSection({refSection}) {
     const vidRef=useRef();
