@@ -99,7 +99,7 @@ function MusicNew({ refSection }) {
                 <img src="/images/music/justaseasily.jpg" alt="Just As Easily" className="img-fluid" />
               </div>
               <div className='col-6 col-md-6 col-lg-7'>
-                <h5>The Hills Know Of You</h5>
+                <h5>Just As Easily</h5>
                 <p>Single</p>
 
                 <a href="https://streamlink.to/Just-As-Easily" target="_blank" rel="noreferrer" className="btn focusMusicButton">Stream Here <FaPlayCircle /> </a>

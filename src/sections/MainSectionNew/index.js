@@ -56,7 +56,7 @@ function MainSectionNew({refSection}) {
                             <h4 className='outnow-heading mt-5'>OUT NOW</h4>
                             <img src="/images/music/hillsSquare.jpg" alt="hills" className='img-fluid mt-4' />
                             <h2 className='ltr-title mt-5'>The Hills Know Of You</h2>
-                            <a href='#' className='btn btn-primary btn-main-page ml-1 mt-3 subscribe-button'>Listen Here</a>
+                            <a href='https://streamlink.to/TheHillsKnowOfYou' target="_blank" className='btn btn-primary btn-main-page ml-1 mt-3 subscribe-button'>Listen Here</a>
                         </div>
                     </div>
                 </div>

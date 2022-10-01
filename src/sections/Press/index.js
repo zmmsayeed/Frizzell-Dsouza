@@ -29,14 +29,19 @@ function Press({refSection}) {
                                 </div>
 
                                 <div className='row text-center'>
-                                    <div className='col-6 col-md-4 col-lg-3 offset-md-2'>
+                                    <div className='col-4 col-md-3 col-lg-3 offset-md-1 offset-lg-1'>
                                         <a href='https://rollingstoneindia.com/tag/frizzell-dsouza/' target={'_blank'}>
                                             <img src='/images/press/rollingstones.png' className='img-fluid' />
                                         </a>
                                     </div>
-                                    <div className='col-6 col-md-4 offset-md-1 offset-lg-1 col-lg-3'>
+                                    <div className='col-4 col-md-3  col-lg-3'>
                                         <a href='' target={'_blank'}>
                                             <img src='/images/press/spring.png' className='img-fluid' />
+                                        </a>
+                                    </div>
+                                    <div className='col-4 col-md-3 col-lg-3 mt-3'>
+                                        <a href='https://ahummingheart.com/best-new-music/best-new-music-week-38/' target={'_blank'}>
+                                            <img src='/images/press/hummingheart.png' className='img-fluid' />
                                         </a>
                                     </div>
                                 </div>
