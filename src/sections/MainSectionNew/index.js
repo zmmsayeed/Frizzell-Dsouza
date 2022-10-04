@@ -5,7 +5,7 @@ import './style.css';
 function MainSectionNew({refSection}) {
 
     return (
-        <div id="main-section" ref={refSection}>
+        <div id="main-section-new" ref={refSection}>
             <img id='myVideo' src="/images/landing.png" alt="landing" />
 
             <div className='content'>

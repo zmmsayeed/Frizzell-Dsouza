@@ -1,4 +1,4 @@
-#main-section {
+#main-section-new {
     /* background-color: var(--yellow-bg-color); */
     /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
@@ -28,8 +28,13 @@
 } 
 
 @media only screen and (max-width: 600px) {
+    #myVideo {
+        background-image: linear-gradient(red, yellow);
+    }
     .content {
         margin-top: 120px;
+        background-image: linear-gradient(#0c0b09, #0c0b09);
+        padding-bottom: 50px;
     }
 }
 

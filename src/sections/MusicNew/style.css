@@ -45,7 +45,7 @@
 }
 
 .eachMusic img {
-    border-radius: 30px;
+    border-radius: 50px;
 }
 
 .rightStreamButton {
@@ -53,4 +53,20 @@
     background-color: #E5E1C4;
     border: 1px solid;
     padding: 1px 10px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .musicYear,
+    .musicSub {
+        font-size: 0.8rem;
+    }
+
+    .musicName {
+        font-size: 1rem;
+    }
+
+    .cardMusicName {
+        font-size: 1rem;
+    }
 }

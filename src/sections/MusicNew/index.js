@@ -82,99 +82,110 @@ function MusicNew({ refSection }) {
           <h1 className='mb-4'>Music</h1>
         </AnimationOnScroll>
 
-        <div className="row">
-          <div className={isMobile ? "col-12 col-md-5 w-100 col-lg-5" : "col-12 col-md-5 w-100 col-lg-5 cssBox"}>
-            <div className='row leftMusicFocus p-4'>
-              <div className='col-6 col-md-6 col-lg-5'>
-                <img src="/images/music/hillsSquare.jpg" alt="The Hills Know Of You" className="img-fluid" />
-              </div>
-              <div className='col-6 col-md-6 col-lg-7'>
-                <h5>The Hills Know Of You</h5>
-                <p>Single</p>
+        <div className='container'>
+          <div className="row">
+            <div className={isMobile ? "col-12 col-md-5 w-100 col-lg-5" : "col-12 col-md-5 w-100 col-lg-5 cssBox"}>
+              <div className='row leftMusicFocus p-2 p-md-4 p-lg-4'>
+                <div className='col-6 col-md-6 col-lg-5'>
+                  <img src="/images/music/hillsSquare.jpg" alt="The Hills Know Of You" className="img-fluid" />
+                </div>
+                <div className='col-6 col-md-6 col-lg-7'>
+                  <h5 className='cardMusicName'>The Hills Know Of You</h5>
+                  <p>Single</p>
 
-                <a href="https://streamlink.to/TheHillsKnowOfYou" target="_blank" rel="noreferrer" className="btn focusMusicButton">Stream Here <FaPlayCircle /></a>
+                  <a href="https://streamlink.to/TheHillsKnowOfYou" target="_blank" rel="noreferrer" className="btn focusMusicButton">
+                    Stream Here { isMobile ? "" : <FaPlayCircle />  }
+                  </a>
+                </div>
+              </div>
+
+              <div className='row leftMusicFocus p-2 p-md-4 p-lg-4 mt-4'>
+                <div className='col-6 col-md-6 col-lg-5 pt-1'>
+                  <img src="/images/music/justaseasily.jpg" alt="Just As Easily" className="img-fluid" />
+                </div>
+                <div className='col-6 col-md-6 col-lg-7'>
+                  <h5 className='cardMusicName'>Just As Easily</h5>
+                  <p>Single</p>
+
+                  <a href="https://streamlink.to/Just-As-Easily" target="_blank" rel="noreferrer" className="btn focusMusicButton">
+                    Stream Here 
+                    { isMobile ? "" : <FaPlayCircle />  }
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div className='row leftMusicFocus p-4 mt-4'>
-              <div className='col-6 col-md-6 col-lg-5 pt-1'>
-                <img src="/images/music/justaseasily.jpg" alt="Just As Easily" className="img-fluid" />
+
+            <div className={isMobile ? "col-12 col-md-7 col-lg-7 w-100 mt-2 mt-md-0 mt-lg-0" : "col-12 col-md-7 col-lg-7 w-100  mt-2 mt-md-0 mt-lg-0 cssBox"} >
+              <div className='row rightMusicFocus p-3'>
+
+                {
+                  musicArr.map((music, ind) => {
+                    return (
+                      <div key={ind} className={ind === 0 ? "row no-gutters eachMusic p-2" : "row no-gutters eachMusic p-2 mt-2"}>
+                      {/* <div className='row no-gutters eachMusic p-2' key={ind}> */}
+                        <div className="col-3 col-md-1 col-lg-1">
+                          <img src={music.image} alt={music.name} className="img-fluid" />
+                        </div>
+
+                        <div className="col-4 col-md-5 col-lg-5">
+                          <p className='musicName mt-2 mb-0 ml-2'>{music.name}</p>
+                        </div>
+
+                        <div className="col-3 col-md-1 col-lg-1">
+                          <p className='musicYear mt-2 mb-0 text-center text-md-left text-lg-left'>
+                            {music.year}
+                            <span className='d-block d-md-none d-lg-none'>
+                              {music.sub}
+                            </span>
+                          </p>
+                        </div>
+
+                        <div className="col-2 col-md-2 col-lg-2 text-center d-none d-md-block d-lg-block">
+                          <p className='musicSub mt-2 mb-0'>{music.sub}</p>
+                        </div>
+
+                        <div className="col-2 col-md-3 col-lg-3 text-center">
+                          <a href={music.general} target="_blank" rel="noreferrer" className='btn rightStreamButton mt-2 mt-md-2 mt-lg-2'>
+                            {
+                              isMobile ? 
+                                <small>
+                                  <FaPlayCircle size={35} className="mt-2 mb-2" />
+                                </small>
+                              : <small>
+                              Stream Here <FaPlayCircle />
+                            </small>
+                            }
+                          </a>
+                        </div>
+                      </div>
+                    )
+                  })
+                }
+                
+                {/* <div className='row no-gutters eachMusic p-2'>
+                  <div className="col-1 col-md-1 col-lg-1">
+                    <img src={musicArr[0].image} alt="" className="img-fluid" />
+                  </div>
+
+                  <div className="col-5 col-md-5 col-lg-5">
+                    <p className='mt-2 mb-0 ml-2'>Foolish Once Again</p>
+                  </div>
+
+                  <div className="col-3 col-md-3 col-lg-3 text-center">
+                    <p className='mt-2 mb-0'>2020 &nbsp;&nbsp; Single</p>
+                  </div>
+
+                  <div className="col-3 col-md-3 col-lg-3 text-center">
+                    <button className='rightStreamButton mt-2'>
+                      <small>Stream Here</small>
+                    </button>
+                  </div>
+                </div> */}
               </div>
-              <div className='col-6 col-md-6 col-lg-7'>
-                <h5>Just As Easily</h5>
-                <p>Single</p>
-
-                <a href="https://streamlink.to/Just-As-Easily" target="_blank" rel="noreferrer" className="btn focusMusicButton">Stream Here <FaPlayCircle /> </a>
-              </div>
-            </div>
-          </div>
-
-
-          <div className={isMobile ? "col-12 col-md-7 col-lg-7 w-100 mt-2 mt-md-0 mt-lg-0" : "col-12 col-md-7 col-lg-7 w-100  mt-2 mt-md-0 mt-lg-0 cssBox"} >
-            <div className='row rightMusicFocus p-3'>
-
-              {
-                musicArr.map((music, ind) => {
-                  return (
-                    <div key={ind} className={ind === 0 ? "row no-gutters eachMusic p-2" : "row no-gutters eachMusic p-2 mt-2"}>
-                    {/* <div className='row no-gutters eachMusic p-2' key={ind}> */}
-                      <div className="col-2 col-md-1 col-lg-1">
-                        <img src={music.image} alt={music.name} className="img-fluid" />
-                      </div>
-
-                      <div className="col-5 col-md-5 col-lg-5">
-                        <p className='mt-2 mb-0 ml-2'>{music.name}</p>
-                      </div>
-
-                      <div className="col-1 col-md-1 col-lg-1">
-                        <p className='mt-2 mb-0'>{music.year}</p>
-                      </div>
-
-                      <div className="col-2 col-md-2 col-lg-2 text-center">
-                        <p className='mt-2 mb-0'>{music.sub}</p>
-                      </div>
-
-                      <div className="col-2 col-md-3 col-lg-3 text-center">
-                        <a href={music.general} target="_blank" rel="noreferrer" className='btn rightStreamButton mt-2'>
-                          {
-                            isMobile ? 
-                              <small>
-                                <FaPlayCircle size={35} className="mt-2 mb-2" />
-                              </small>
-                            : <small>
-                            Stream Here <FaPlayCircle />
-                          </small>
-                          }
-                        </a>
-                      </div>
-                    </div>
-                  )
-                })
-              }
-              
-              {/* <div className='row no-gutters eachMusic p-2'>
-                <div className="col-1 col-md-1 col-lg-1">
-                  <img src={musicArr[0].image} alt="" className="img-fluid" />
-                </div>
-
-                <div className="col-5 col-md-5 col-lg-5">
-                  <p className='mt-2 mb-0 ml-2'>Foolish Once Again</p>
-                </div>
-
-                <div className="col-3 col-md-3 col-lg-3 text-center">
-                  <p className='mt-2 mb-0'>2020 &nbsp;&nbsp; Single</p>
-                </div>
-
-                <div className="col-3 col-md-3 col-lg-3 text-center">
-                  <button className='rightStreamButton mt-2'>
-                    <small>Stream Here</small>
-                  </button>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
-        
       </div>
     </div>
   );
