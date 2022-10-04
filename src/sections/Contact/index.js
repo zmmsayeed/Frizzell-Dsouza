@@ -37,7 +37,7 @@ function Contact({ refSection }) {
                 {/* theurbanweaverproject<span className="montserrat">@</span>gmail.com */}
                 For Bookings and Queries:
               </p>
-              <h4>
+              <h4 className='text-center text-md-left text-lg-left'>
                 {/* <FaPhoneSquareAlt className='mr-2'/> */}
                 {/* <span className="montserrat">+</span>91 99<span className="montserrat">4</span>59 93522 */}
                 reach<span className="montserrat">@</span>frizzelldsouza.in
