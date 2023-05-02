@@ -109,7 +109,7 @@ function Footer() {
 
       <div className="container text-center">
         <p className="copyright">
-            Copyright &copy; {new Date().getFullYear()} The Urban Weaver. All rights reserved.
+            Copyright &copy; {new Date().getFullYear()} Frizzell D'Souza. All rights reserved.
         </p>
       </div>
     </footer>
