@@ -169,14 +169,14 @@ class Subscribe extends React.Component {
           <div className="row">
             <div className="col-md-2 col-lg-2 col-12 offset-md-4 offset-lg-4 mt-4">
               <AnimationOnScroll animateIn="animate__fadeIn">
-                <h5>Name</h5>
+                <h5>Name <span className="montserrat">*</span></h5>
                 <input type="text" name="name" value={this.state.name} onChange={this.onChange} placeholder="Enter Your Full Name" />
               </AnimationOnScroll>
               
             </div>
             <div className="col-md-2 col-lg-2 col-12  mt-4">
               <AnimationOnScroll animateIn="animate__fadeIn">
-                <h5>Email Address</h5>
+                <h5>Email Address <span className="montserrat">*</span></h5>
                 <input type="email" name="email" value={this.state.email} onChange={this.onChange} placeholder="Enter Your Email Address" />
               </AnimationOnScroll>
             </div>
@@ -289,8 +289,10 @@ class Subscribe extends React.Component {
               </div>
             </div>
 
+
             <div className="row">
-              <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4 mt-5">
+              <div className="col-md-4 col-lg-4 col-12 offset-md-4 offset-lg-4 mt-3">
+                <p>* Mandatory fields</p>
                 <AnimationOnScroll animateIn="animate__fadeIn">
                   <button className="btn btn-primary btn-block" onClick={this.subscribeUser}>Subscribe</button>
                 </AnimationOnScroll>
