@@ -6,7 +6,7 @@ function MainSectionNew({refSection}) {
 
     return (
         <div id="main-section-new" ref={refSection}>
-            <img id='myVideo' src="/images/landing.png" alt="landing" />
+            <img id='myVideo' src="/images/MainSection/landing.jpeg" alt="landing" />
 
             <div className='content'>
                 <div className="container">
