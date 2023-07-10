@@ -34,8 +34,8 @@ function Navbar({activeSection}) {
           <a className="navbar-brand" href="#">
             {
               activeSection === 'about'
-              ?<img src="/images/logo_dark.png" alt="Frizzell D'Souza" width="180px" />
-              :<img src="/images/logo_light_1.png" alt="Frizzell D'Souza" width="180px" />
+              ?<img src="/images/logo/logo_white.png" alt="Frizzell D'Souza" width="180px" />
+              :<img src="/images/logo/logo_white.png" alt="Frizzell D'Souza" width="180px" />
             }
             
           </a>

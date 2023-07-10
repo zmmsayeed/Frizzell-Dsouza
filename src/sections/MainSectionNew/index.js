@@ -1,4 +1,5 @@
-import { FaInstagram, FaYoutube, FaTwitter, FaSpotify } from 'react-icons/fa';
+import { FaInstagram, FaYoutube, FaTwitter, FaSpotify,} from 'react-icons/fa';
+import { BsFacebook } from 'react-icons/bs';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import './style.css';
 
@@ -9,22 +10,12 @@ function MainSectionNew({refSection}) {
             <img id='myVideo' src="/images/MainSection/landing.jpeg" alt="landing" />
 
             <div className='content'>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12 col-md-6 col-lg-6  main-section-content">
-                            <AnimationOnScroll animateIn="animate__fadeIn">
-                                <h1 className='mb-4 font-weight-bold'>Singer<span className='montserrat'>-</span>Songwriter</h1>
-                            </AnimationOnScroll>
-                            <AnimationOnScroll animateIn="animate__fadeIn">
-                                <h4 className='tagline mb-5'>
-                                    <span className='montserrat'>"</span>I do music for the love of it, and that<span className='montserrat'>'</span>s about it.<span className='montserrat'>"</span>
-                                </h4>
-                            </AnimationOnScroll>
-
-
+                <div className="container-fluid p-md-5 p-lg-5 p-3">
+                    <div className="row p-0 p-lg-5 p-md-5">
+                        <div className="col-12 col-md-6 col-lg-6 d-md-flex d-lg-flex d-block pb-5 align-items-end order-2 order-md-1 order-lg-1 text-md-left text-lg-left text-center">
                             <div className="mt-5">
                                 <AnimationOnScroll animateIn="animate__fadeIn">
-                                    <a href="https://www.instagram.com/frizzell.dsouza" target="_blank" rel="noopener noreferrer" className='social-box '>
+                                    <a href="https://www.instagram.com/frizzell.dsouza" target="_blank" rel="noopener noreferrer" className='social-box'>
                                         <FaInstagram size={30} />
                                     </a>
                                     <a href="https://www.youtube.com/channel/UCpDjYVQS411CBBw0thoB0Sw" target="_blank" rel="noopener noreferrer" className='social-box'>
@@ -36,27 +27,19 @@ function MainSectionNew({refSection}) {
                                     <a href="https://open.spotify.com/artist/17j8WfojaUlIDrnDG7IfIQ?si=Zs7vG1foR_S3znxY0wiQbQ" target="_blank" rel="noopener noreferrer" className='social-box'>
                                         <FaSpotify size={30} />
                                     </a>
+                                    <a href="https://www.facebook.com/frizzelldsouzamusic" target="_blank" rel="noopener noreferrer" className='social-box'>
+                                        <BsFacebook size={30} />
+                                    </a>
                                 </AnimationOnScroll>
                             </div>
 
-                            <AnimationOnScroll animateIn="animate__fadeIn">
-                                <div className='subscribe-form mt-lg-5 mt-md-5  mt-3'>
-                                    
-                                    {/* <a href="https://originaldog.in/profile/view/ETPzFKnvzHMHkEDSnTt9ynTUio63" target="_blank" rel="noreferrer">
-                                        <button className='btn btn-primary btn-main-page mt-5'>Fund</button>
-                                    </a> */}
-                                    <a href='#subscribe'>
-                                        <button className='btn btn-primary btn-main-page ml-1 mt-3 subscribe-button'>Subscribe</button>
-                                    </a>
-                                </div>
-                            </AnimationOnScroll>
                         </div>
 
-                        <div className='col-12 col-md-4 col-lg-4 offset-md-1 offset-lg-1 main-section-content-right align-items-center' id='latest-release'>
-                            <h4 className='outnow-heading mt-5 mt-md-0 mt-lg-0'>OUT NOW</h4>
-                            <img src="/images/music/hillsSquare.jpg" alt="hills" className='img-fluid mt-4' />
-                            <h2 className='ltr-title mt-5'>The Hills Know Of You</h2>
-                            <a href='https://streamlink.to/TheHillsKnowOfYou' target="_blank" className='btn btn-primary btn-main-page ml-1 mt-3 subscribe-button'>Listen Here</a>
+                        <div className='col-12 col-md-3 col-lg-3 offset-lg-2 offset-md-2 mt-md-5 mt-lg-5 mt-0 p-4 text-center order-lg-2 order-md-2 order-1' id='latest-release'>
+                            <AnimationOnScroll animateIn="animate__fadeIn">
+                                <img src="/images/MainSection/tour.png" alt="Tour" className='img-fluid mt-4' />
+                                <a href='#subscribe' className='btn btn-primary btn-main-page ml-1 mt-3 mb-4 subscribe-button'>Subscribe for Updates</a>
+                            </AnimationOnScroll>
                         </div>
                     </div>
                 </div>

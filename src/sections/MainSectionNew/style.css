@@ -144,7 +144,7 @@ h4.tagline {
 
 a.social-box {
     padding: 10px 15px;
-    color: #EEEEEE;
+    color: #E2DEA9;
 }
 
 .social-box:first-child {
@@ -152,7 +152,17 @@ a.social-box {
 }
 
 a.social-box:hover {
-    color: #E2DEA9;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    a.social-box {
+        padding: 10px 5px;
+        color: #E2DEA9;
+    }
+    .social-box:first-child {
+        padding-left: 0;
+    }
 }
 
 .btn-main-page {
@@ -179,6 +189,11 @@ a.social-box:hover {
 .outnow-heading {
     font-weight: bold;
     color: #E5E1C4;
+}
+
+#latest-release {
+    background-color: black;
+    border-radius: 50px;
 }
 
 /* #latest-release img {
