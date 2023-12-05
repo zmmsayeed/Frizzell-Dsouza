@@ -1,4 +1,5 @@
 import { Component } from "react";
+import Login from "../Login";
 
 // importing stylesheel
 import './style.css';
@@ -17,8 +18,8 @@ class EmailDashboard extends Component {
     }
 
     render() {
-        if (this.state.isAuthenticated) {
-            return <p>You are logged in</p>
+        if (!this.state.isAuthenticated) {
+            return <Login
         }
         return (
             <p>Email Dashboard</p>
