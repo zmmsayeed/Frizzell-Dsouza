@@ -7,8 +7,8 @@ class Login extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            username: '',
-            password: ''
+            username: 'abc',
+            password: 'abc'
         }
     }
 
@@ -22,9 +22,17 @@ class Login extends Component {
         event.preventDefault();
         console.log("Submitting the login page: ", this.state.username, this.state.password)
 
+        let data = {
+            username: this.state.username,
+            lastLoggedIn: "3 days ago",
+            isAuthenticated: true
+        }
+
+        this.props.changeAuth(data);
         //call the login API
     }
     render() {
+
         return (
             <div className="container">
                 <div className="row justify-content-center align-items-center" style={{ height: "100vh" }}>
@@ -36,7 +44,7 @@ class Login extends Component {
                                     <div className="form-group">
                                         <label>Username</label>
                                         <input type="text" className="form-control" placeholder="Enter username" name="username"
-                                            value={this.state.username} onChange={this.onChange}/>
+                                            value={this.state.username} onChange={this.onChange} autoFocus={true}/>
                                     </div>
                                     <div className="form-group">
                                         <label>Password</label>
