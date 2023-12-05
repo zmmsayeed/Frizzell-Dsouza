@@ -1,20 +1,22 @@
 #about {
-    /* background-color: var(--yellow-bg-color); */
-    padding-top: 5%;
+    min-height: 100vh;
+    background-color: #0E1323;
+    padding-top: 3%;
     padding-bottom: 5%;
 }
 
 .about-sub-heading {
-    color: var(--black);
-    font-size: 1.2rem;
+    /* font-size: 1.6rem; */
     color: var(--pink);
-    font-weight: bold;
+    /* font-weight: bold; */
+    /* font-family: 'Lancelot', cursive; */
 }
 
 .about-heading {
-    font-weight: bold;
-    color: #63dfbc;
-    font-size: 2.5em;
+    font-family: 'the_seasonsregular';
+    color: #dbc4bc;
+    /* border-left: 1px solid #dbc4bc;
+    padding-left: 10px; */
 }
 
 .period {
@@ -22,11 +24,37 @@
 }
 
 #about p {
-    font-size: 1.2em;
+    color: #dbd5ce;
+    font-size: 1.4em;
+    font-family: 'the_seasonsregular';
+    letter-spacing: 1.5px;
 }
 
 #about .btn-primary {
-    background-color: #6f42c1;
-    border-color: #6f42c1;
-    border-radius: 0;
+    font-family: 'the_seasonsregular';
+    background-color: #808275;
+    border-color: #808275;
+    border-radius: 40px;
+    padding: 10px 20px;
+    letter-spacing: 1.2px;
+}
+
+#about .btn-primary:hover {
+    background-color: white;
+    border-color: white;
+    color: #30334b !important;
+}
+
+.about-img {
+    border-radius: 50px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-img {
+        height: 350px;
+        width: 100%;
+        object-fit: cover;
+        object-position: 0% 50%;
+        margin-bottom: 20px;
+    }
 }

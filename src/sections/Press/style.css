@@ -1,0 +1,76 @@
+#press {
+    background-color: #EAE6E1;
+    min-height: 100vh;
+}
+.press-container {
+    min-height: 100vh;
+    padding: 8% 10% 10% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .press-container {
+        min-height: auto;
+        padding: 10% 2% 10% 2%;
+    }
+}
+
+.press-container div {
+    min-height: 100%;
+    text-align: center !important;
+}
+
+
+#press h2 {
+    color: #69443C;
+    font-family: 'the_seasonsbold';
+}
+
+/* .press-images1,
+.press-images2 {
+    max-height: 250px;
+    flex-direction:row;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.press-images2 {
+    justify-content: center;
+}
+
+.press-images1 img {
+    padding: 0;
+    margin: 0;
+    padding: 20px;
+    width: 30%;
+    order: 1;  
+}
+
+.press-images2 img {
+    padding: 0;
+    margin: 0;
+    padding: 20px;
+    width: 30%;
+    order: 1;
+} */
+
+.press-read-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 4% !important;
+    padding-bottom: 2% !important;
+}
+
+.press-read {
+    width: 100%;
+    background-color: white;
+    padding: 4%;
+    max-height: 280px;
+    overflow-y: scroll;
+}

@@ -1,0 +1,62 @@
+#subscribe {
+    min-height: 100vh;
+    background-color: #0e1323;
+    padding: 8% 0;
+    color: #e8e29a;
+    display: flex;
+    align-items: center;
+}
+
+#subscribe h3 {
+    color: #e8e29a;
+    font-family: 'the_seasonsbold';
+}
+
+#subscribe h4 {
+    color: #e8e29a;
+    font-family: 'the_seasonsregular';
+    font-size: 1.2em;
+    letter-spacing: 1.5px;
+}
+
+#subscribe h5 {
+    font-size: 1.1rem;
+    color: #e8e29a;
+    font-family: 'the_seasonsbold';
+}
+
+
+#subscribe input,
+#subscribe select {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #808275 !important;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: #e8e29a;
+}
+
+#subscribe input::placeholder,
+#subscribe select::placeholder {
+    font-size: 0.8rem;
+    color: #e8e29a !important;
+}
+
+#subscribe option {
+    font-size: 1rem;
+    background-color: #0e1323 !important;
+}
+
+#subscribe button {
+    background: #e8e29a !important;
+    color: #0e1323 !important;
+    border: 1px solid #e8e29a;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+#subscribe button:hover {
+    background: transparent !important;
+    color: #e8e29a !important;
+}

@@ -1,0 +1,44 @@
+#footer {
+    background-color: #42373b;
+    padding: 2% 0;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    #footer {
+        padding: 10% 3%;
+    }
+}
+
+#footer h2 {
+    font-weight: 800;
+    color: #e5e1c4 !important;
+    font-size: 1.5rem;
+    font-family: 'the_seasonslight';
+    letter-spacing: 1.7px;
+}
+
+#footer p.heading {
+    font-size: 1rem;
+    color: white !important;
+}
+
+.footer-link {
+    display: block;
+    color: #e5e1c4 !important;
+    font-family: 'the_seasonslight';
+    letter-spacing: 1.2px;
+}
+
+.footer-link:hover {
+    color: white !important;
+}
+
+#footer hr {
+    border: 1px solid #5e5257;
+    margin: 2% 0;
+}
+
+p.copyright {
+    color: white;
+}

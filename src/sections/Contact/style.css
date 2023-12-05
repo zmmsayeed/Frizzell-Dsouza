@@ -1,62 +1,72 @@
 #contact {
+    min-height: 100vh;
     background: #f9f9f9;
+    /* padding: 5% 0; */
+}
+
+@media only screen and (max-width: 600px) {
+    #contact {
+        min-height: auto;
+        padding: 10% 0;
+    }
+}
+
+.contact-content {
+    min-height: 50vh;
     padding: 5% 0;
-}
-
-.reach {
-    font-weight: bold;
-    font-size: 2.5rem;
-    color: var(--dark-light);
-}
-
-.contact-frizzell {
-    font-weight: bold;
-    font-size: 3.5em;
-    color: var(--pink);
-}
-
-/* #6f42c1 */
-
-.getintouch {
-    background-color: #6f42c1;
-    font-size: 6rem;
-    font-weight: bold;
-    padding: 5%;
-    color: white;
-}
-
-/* .touch-right {
-    background-color: gray;
-} */
-
-.social-links {
     display: flex;
-    flex-direction: row;
-}
-
-.social-links a {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    border-radius: 50%;
+    align-items: center;
     justify-content: center;
-    align-items: center; 
-    background-color: lightblue;
     flex-direction: row;
-    margin-right: 10px;
 }
-/* .social-links a{
-    display: block;
-    float: left;
-    width:50px;
-    height: 50px;
-    border: 2px solid #909090;
-    margin-right: 7px;
-    text-align:center;
-}  */
 
-.social-links a i{
-    font-size: 100px;
-    display: inline-block;
-    position: relative;
+.contact-getintouch {
+    font-family: 'the_seasonsregular';
+    /* font-weight: bold; */
+    font-size: 8rem;
+    color: #30334b !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-getintouch{
+        font-size: 5rem !important;
+    }
+}
+
+#contact p {
+    font-family: 'the_seasonsregular';
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+}
+
+#contact h4 {
+    font-family: 'the_seasonslight';
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #735440;
+}
+
+@media only screen and (max-width: 600px) {
+    #contact p {
+        text-align: center;
+        font-family: 'the_seasonsregular';
+        font-weight: bold;
+        font-size: 1rem;
+        letter-spacing: 1.5px;
+    }
+}
+
+/* Social Media link styling */
+#contact a.social-box {
+    padding: 10px 15px;
+    color: #30334b;
+}
+
+#contact .social-box:first-child {
+    padding-left: 0;
+}
+
+#contact a.social-box:hover {
+    color: #42373b;
 }

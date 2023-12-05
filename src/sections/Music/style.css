@@ -1,19 +1,28 @@
 #music {
-    background: linear-gradient(-45deg, #fed5db, #e5d8f3, #b0d8e7, #e7dda1);
+    min-height: 100vh;
+    padding: 5% 0;
+    /* background: linear-gradient(-45deg, #fed5db, #e5d8f3, #b0d8e7, #e7dda1); */
     background-size: 400% 400%;
     animation: gradient 1s ease infinite;
 }
+#music {
+    background-color: #dbd5ce;
+}
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+#music h1 {
+    color: #69443c;
+    font-family: 'the_seasonsregular';
+    /* border-left: 1px solid #69443c;
+    padding-left: 10px; */
+}
+
+.card {
+    background-color: transparent !important;
+    border: 0 !important;
+}
+
+.music-period {
+    color: #6f42c1;
 }
 
 .music-item {
@@ -24,4 +33,73 @@
 
 .music-item:hover {
     border-left: 3px solid black;
+}
+
+
+/* New Design */
+.card {
+    overflow: hidden;
+}
+
+.card-img-top {
+    filter: brightness(100%);
+    transition: all 0.5s ease;
+}
+
+.card-img-top:hover {
+    filter: brightness(50%);
+    cursor: pointer;
+}
+
+
+.music-title {
+    font-family: 'the_seasonsregular';
+    color: #69443c !important;
+    letter-spacing: 0.8px;
+    font-size: 1.1em;
+}
+
+  
+.dropdown-content {
+    color: white;
+    margin-top: -50px;
+    display: none;
+    position: relative;
+    background-color: #0e1323;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 99;
+    width: 120px !important;
+    padding: 10px 15px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: all 1s ease !important;
+}
+
+.dropdown-content p {
+    font-size: 0.7rem;
+}
+  
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown:hover .dropdown-content {display: block;}
+
+.mobile-listen{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .mobile-listen{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .dropdown-content {
+        display: none;
+    }
+
+    .dropdown:hover .dropdown-content {display: none;}
 }
