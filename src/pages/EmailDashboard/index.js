@@ -11,7 +11,9 @@ class EmailDashboard extends Component {
 
         this.state = {
             isAuthenticated: false,
-            editorHtml: '',        }
+            editorHtml: '',
+            testEmail: false
+        }
     }
 
     changeAuth = (data) => {
@@ -27,14 +29,22 @@ class EmailDashboard extends Component {
         })
     }
 
-    handleChange = (html) => {
+    handleHtmlChange = (html) => {
         this.setState({ editorHtml: html });
     }
 
-    handleSubmit = () => {
+    handleCheckChange = (event) => {
+        this.setState({
+            [event.target.name]: event.target.checked
+        })
+    }
+
+    handleSubmit = (event) => {
+        event.preventDefault();
+
         // Here you would typically handle the submission to the backend
-        const { editorHtml } = this.state;
-        console.log(editorHtml);
+        const { editorHtml, testEmail } = this.state;
+        console.log(testEmail, editorHtml);
     }
 
     render() {
@@ -45,8 +55,6 @@ class EmailDashboard extends Component {
         }
 
         const modules = {
-
-
             toolbar: [
                 [{ 'header': [1, 2, false] }],
                 ['bold', 'italic', 'underline','strike', 'blockquote', 'code-block'],
@@ -78,12 +86,21 @@ class EmailDashboard extends Component {
                 </nav>
 
                 <div className="container mt-5">
-                    <h3>Email to Subscribers: </h3>
+                    <h3 className="mb-4">Email to Subscribers: </h3>
                     <ReactQuill
+                        name="editorHtml"
                         value={this.state.editorHtml}
-                        onChange={this.handleChange}
+                        onChange={this.handleHtmlChange}
                         modules={modules}
                     />
+                    <p className="my-4 d-block">
+                        <input type="checkbox" className='mr-2'
+                               name="testEmail"
+                               value={this.state.testEmail}
+                               onChange={this.handleCheckChange}
+                        />
+                        This is a test email
+                    </p>
                     <button onClick={this.handleSubmit}>Send Email</button>
                 </div>
             </div>
